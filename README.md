@@ -23,7 +23,7 @@ Log into pi using SSH
 user@hostname.local
 
 You may need to configure hosts first in VSCode. Remove the old ones. Then add a new host with the username and address.
-You may also need to remove the hosts from .ssh at 
+You may also need to remove the hosts on you mac .ssh at 
 ```
 cd /Users/mm/.ssh/
 sudo subl known_hosts
@@ -69,7 +69,8 @@ sudo apt install samba
 sudo subl /etc/samba/smb.config
 ```
 
-**Use this**
+**Use this**  
+Change user "mm" to actual username
 
 ```
 #======================= Global Settings =======================
@@ -152,77 +153,67 @@ sudo smbpasswd -a mm
 sudo systemctl restart smbd
 ```
 
-Connect from your mac with cmd+k
+Connect from your mac with cmd+k  
+change the hostname and make sure the username is mm
+
+
+`smb://hostname.local/mm`
+
+***We should now be connected via VNC (TigerVNC) and in VSCode Terminal***
 
 ---
 
 ### Install the command line stuff
 
-This should work automatically in remote vscode since menslo is installed. But for local you need to install fonts. Run this script generate by AI
-```
 
-```
-logout and log back in
-prompt
 
 **zsh**
 https://divinenanny.nl/blog/2021-08-07-install-oh-my-zsh-on-raspberry-pi/
+```
+sudo apt-get install zsh
+chsh -s $(which zsh)
+
+```
+make sure you run `chsh -s $(which zsh)` in the terminal on the pi as well as in the terminal in VSCode on your mac
+
+you can check your shell with `echo $SHELL`  
+you can check your zsh install location with `which zsh`  
+Sometimes it is in `/usr/bin/zsh` and sometimes `/bin/zsh`  
+Logout and log back in to make sure it is set
 
 **ohmyzsh**
 https://github.com/ohmyzsh/ohmyzsh
-
-**powerlevel10K**
-https://github.com/romkatv/powerlevel10k
-
-
-
-
-***We should now be connected via VNC and in VSCode Terminal***
-
-
-
-
-When VS Code starts I can link it to my personal settings but this fucks up terminal so 
-then I need to setup ohmyzsh and power10k
-Have to install zsh on the pi
 ```
-sudo apt install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 
-$ zsh --version
+Install Fonts since they are not installed by default
+```
+./install_menlo_fonts.sh
+```
 
-$ echo $SHELL
-$ chsh -s $(which zsh) 
-or 
-$ chsh -s /usr/bin/zsh
+
+**powerlevel10K** https://github.com/romkatv/powerlevel10k  
+```
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+```
+Open the Zsh settings (which can be found in ~/.zshrc):
 
 ```
-The restart vscode not just the terminal
-Choose system admin settings 
-
-Install the fonts
-$ mkdir ~/.local/share/fonts
-copy fonts there
-$ fc-cache -f -v
-
-
-Then install powerlevel10k
+nano ~/.zshrc
 ```
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+
+Find the line with `ZSH_THEME=` and set this to:
+
 ```
-1. set ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc.
+ZSH_THEME="powerlevel10k/powerlevel10k"
+```
 
+Then restart the terminal
 
+The terminal doesn't default to ZSH on the remote CURSOR. But you can manually change it. It does seem to work with VSCode Terminal.
+
+IF FONT IS NOT WORKING---
 Visual Studio Code: Open File → Preferences → Settings (PC) or Code → Preferences → Settings (Mac), enter terminal.integrated.fontFamily in the search box at the top of Settings tab and set the value below to MesloLGS NF.
 
 
-Install Menlo font - note: this would have been done above during the vscode configuration
-```
-sudo mkdir /usr/share/fonts/truetype/newfonts
-sudo cp ./fonts/*  /usr/share/fonts/truetype/newfonts
-fc-cache -f -v
-fc-list
-
-#may need to install 
-sudo apt install libsdl2-ttf-2.0-0
-```
