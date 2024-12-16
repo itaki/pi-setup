@@ -29,6 +29,15 @@ cd /Users/mm/.ssh/
 sudo subl known_hosts
 ```
 
+Set username and password for github
+```
+# Set your username
+git config --global user.name "itaki"
+
+# Set your email
+git config --global user.email "michael@itaki.com"
+```
+
 Clone this repo
 ```
 git clone https://github.com/itaki/pi-setup.git
