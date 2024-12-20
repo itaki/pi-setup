@@ -22,4 +22,6 @@ sudo shutdown -r now
 
 Use `docker-compose ps` to see the status of the containers.
 
+The issues with this docker is that for some reason 
+
 
