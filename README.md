@@ -60,6 +60,7 @@ wget -qO- https://raw.githubusercontent.com/Botspot/pi-apps/master/install | bas
 - Conky
 - More RAM
 
+Setup Tailscale
 
 
 

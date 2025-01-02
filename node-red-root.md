@@ -41,3 +41,9 @@ To use the 'monokai' editor theme, remember to install @node-red-contrib-themes/
 cd ~/.node-red
 npm install @node-red-contrib-themes/theme-collection
 ```
+
+
+install 
+node-red-contrib-pca9685@0.1.4
+node-red-contrib-ads1x15_i2c
+@joe-ab1do/mcp-pcf-aio  # this one gave issues when installing in docker
