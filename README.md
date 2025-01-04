@@ -9,9 +9,15 @@ Open chromium and install lastpass
 - run updates in upper right corner
 - open preferences -> Raspberry pi configuration
 - change the hostname (you'll need to reboot)
+- set the ip address to static *if needed*
 - turn on VNC and I2C
 - set the keyboard to apple
 
+### IP Address
+Do not use /etc/dhcpcd.conf anymore. We use NetworkManager now.
+Click the new NetworkManager icon in the top right corner of the screen.
+advanced options -> Edit Connections -> select the connection -> Settings gear icon -> IPv4 Settings -> Add custom IP address
+Reboot
 
 ### Connect Remotely
 
