@@ -233,3 +233,31 @@ IF FONT IS NOT WORKING---
 Visual Studio Code: Open File → Preferences → Settings (PC) or Code → Preferences → Settings (Mac), enter terminal.integrated.fontFamily in the search box at the top of Settings tab and set the value below to MesloLGS NF.
 
 
+### Upgrade Python
+https://raspberrytips.com/install-latest-python-raspberry-pi/
+
+You may need to install the vscode python extension.
+
+### Create a virtual environment
+```
+python -m venv .venv
+source .venv/bin/activate
+```
+
+### Install Python Packages
+```
+pip install -r requirements.txt
+```
+
+in order for **i2cdetect** to work you need to make sure the path is correct.
+```
+echo #PATH
+```
+If `/usr/sbin/i2cdetect -y 1` works then you need to add this location to the path.
+```
+   nano ~/.zshrc
+```
+Add this to the end of the file.
+```
+export PATH="/usr/sbin:$PATH"
+```

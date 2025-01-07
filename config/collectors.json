@@ -1,0 +1,28 @@
+[
+    {
+        "label": "Main Collector Relay",
+        "type": "collector",
+        "id": "main_collector",
+        "location": "By the collector",
+        "address": {
+            "board": "master_control_gpio_expander",
+            "pins": [5]
+        },
+        "preferences": {
+            "minimum_up_time": 10
+        }
+    },
+    {
+        "label": "Central Air Filter",
+        "type": "collector",
+        "id": "central_air_filter",
+        "location": "Over the bench",
+        "address": {
+            "board": "island_gpio_expander",
+            "pins": [5]
+        },
+        "preferences": {
+            "minimum_up_time": 0
+        }
+    }
+]

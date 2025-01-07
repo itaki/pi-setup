@@ -1,0 +1,161 @@
+[
+    {
+        "label": "Hose",
+        "id": "hose",
+        "location": "By the Pi",
+        "preferences": {
+            "collector_prefs": [
+                {
+                    "name": "main_collector",
+                    "spin_down_time": 0
+                }
+            ],
+            "gate_prefs": ["hose", "corner_branch"],
+            "light_prefs": ["hose_button_LED"]
+        }
+    },
+    {
+        "label": "Router Table",
+        "id": "router_table",
+        "location": "On table saw",
+        "preferences": {
+            "collector_prefs": [
+                {
+                    "name": "main_collector",
+                    "spin_down_time": 0
+                },
+                {
+                    "name": "central_air_filter",
+                    "spin_down_time": 600
+                }
+            ],
+            "gate_prefs": ["router_table", "black_diamond", "everest_access"],
+            "light_prefs": ["router_table_button_LED"]
+        }
+    },
+    {
+        "label": "Overhead Hose",
+        "id": "overhead_hose",
+        "location": "By the pi",
+        "preferences": {
+            "collector_prefs": [
+                {
+                    "name": "main_collector",
+                    "spin_down_time": 0
+                },
+                {
+                    "name": "central_air_filter",
+                    "spin_down_time": 600
+                }
+            ],
+            "gate_prefs": ["everest_access", "island_branch_overhead_arm"],
+            "light_prefs": ["overhead_hose_button_LED"]
+        }
+    },
+    {
+        "label": "Miter Saw",
+        "id": "miter_saw",
+        "location": "By the Miter Saw",
+        "preferences": {
+            "collector_prefs": [
+                {
+                    "name": "main_collector",
+                    "spin_down_time": 10
+                },
+                {
+                    "name": "central_air_filter",
+                    "spin_down_time": 600
+                }
+            ],
+            "gate_prefs": ["miter_saw", "miter_saw_right"],
+            "light_prefs": []
+        }
+    },
+    {
+        "label": "Miter Saw Left",
+        "id": "miter_saw_left",
+        "location": "By the Miter Saw",
+        "preferences": {
+            "collector_prefs": [],
+            "gate_prefs": ["miter_saw_left"],
+            "light_prefs": ["miter_saw_left_button_LED"]
+        }
+    },
+    {
+        "label": "Miter Saw Right",
+        "id": "miter_saw_right",
+        "location": "By the Miter Saw",
+        "preferences": {
+            "collector_prefs": [],
+            "gate_prefs": ["miter_saw_right"],
+            "light_prefs": ["miter_saw_right_button_LED"]
+        }
+    },
+    {
+        "label": "Band Saw",
+        "id": "band_saw",
+        "location": "By the Band Saw",
+        "preferences": {
+            "collector_prefs": [
+                {
+                    "name": "main_collector",
+                    "spin_down_time": 10
+                },
+                {
+                    "name": "central_air_filter",
+                    "spin_down_time": 600
+                }
+            ],
+            "gate_prefs": ["band_saw", "corner_branch"],
+            "light_prefs": []
+        }
+    },
+    {
+        "label": "Table Saw",
+        "id": "table_saw",
+        "location": "By the Table Saw",
+        "preferences": {
+            "collector_prefs": [
+                {
+                    "name": "main_collector",
+                    "spin_down_time": 10
+                },
+                {
+                    "name": "central_air_filter",
+                    "spin_down_time": 0
+                }
+            ],
+            "gate_prefs": ["table_saw_main", "black_diamond", "everest_access"],
+            "light_prefs": []
+        }
+    },
+    {
+        "label": "Planer",
+        "id": "planer",
+        "location": "By the Table Saw",
+        "preferences": {
+            "collector_prefs": [
+                {
+                    "name": "main_collector",
+                    "spin_down_time": 10
+                },
+                {
+                    "name": "central_air_filter",
+                    "spin_down_time": 600
+                }
+            ],
+            "gate_prefs": ["planer", "black_diamond", "everest_access"],
+            "light_prefs": []
+        }
+    },
+    {
+        "label": "Bench Light",
+        "id": "bench_light",
+        "location": "Above the bench",
+        "preferences": {
+            "collector_prefs": [],
+            "gate_prefs": [],
+            "light_prefs": ["bench"]
+        }
+    }
+]

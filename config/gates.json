@@ -1,226 +1,226 @@
 [
-    {
-      "id": "everest_access",
-      "label": "Everest Access",
-      "type": "servo_gate",
-      "location": "By the Pi",
-      "address": {
-        "board": "master_pca9685_0x41",
-        "channel": 0
-      },
-      "range_us": {
-        "min": 1300,
-        "max": 2100
-      }
+  {
+    "id": "everest_access",
+    "label": "Everest Access",
+    "type": "servo_gate",
+    "location": "By the Pi",
+    "address": {
+      "board": "master_pca9685_0x41",
+      "channel": 0
     },
-    {
-      "id": "hose",
-      "label": "HOSE",
-      "type": "servo_gate",
-      "location": "By the Pi",
-      "address": {
-        "board": "master_pca9685_0x41",
-        "channel": 1
-      },
-      "range_us": {
-        "min": 1213,
-        "max": 1747
-      }
-    },
-    {
-      "id": "mitersaw",
-      "label": "MiterSaw",
-      "type": "servo_gate",
-      "location": "Below the miter saw",
-      "address": {
-        "board": "master_pca9685_0x41",
-        "channel": 2
-      },
-      "range_us": {
-        "min": 1173,
-        "max": 1833
-      }
-    },
-    {
-      "id": "mitersaw_left",
-      "label": "MiterSaw Left",
-      "type": "servo_gate",
-      "location": "Below the miter saw to the left",
-      "address": {
-        "board": "master_pca9685_0x41",
-        "channel": 3
-      },
-      "range_us": {
-        "min": 1967,
-        "max": 1167
-      }
-    },
-    {
-      "id": "mitersaw_right",
-      "label": "MiterSaw Right",
-      "type": "servo_gate",
-      "location": "Below the miter saw to the left",
-      "address": {
-        "board": "master_pca9685_0x41",
-        "channel": 4
-      },
-      "range_us": {
-        "min": 933,
-        "max": 1900
-      }
-    },
-    {
-      "id": "floorsweep",
-      "label": "FloorSweep",
-      "type": "servo_gate",
-      "location": "FloorSweep",
-      "address": {
-        "board": "master_pca9685_0x41",
-        "channel": 6
-      },
-      "range_us": {
-        "min": 1300,
-        "max": 1967
-      }
-    },
-    {
-      "id": "corner_branch",
-      "label": "Corner Branch",
-      "type": "servo_gate",
-      "location": "Corner Branch",
-      "address": {
-        "board": "master_pca9685_0x41",
-        "channel": 7
-      },
-      "range_us": {
-        "min": 1200,
-        "max": 1833
-      }
-    },
-    {
-      "id": "bandsaw",
-      "label": "BandSaw",
-      "type": "servo_gate",
-      "location": "Below the BandSaw directly after the corner branch split",
-      "address": {
-        "board": "master_pca9685_0x41",
-        "channel": 5
-      },
-      "range_us": {
-        "min": 1153,
-        "max": 1700
-      }
-    },
-    {
-      "id": "drill_press",
-      "label": "Drill Press",
-      "type": "servo_gate",
-      "location": "Behind the drill press",
-      "address": {
-        "board": "master_pca9685_0x41",
-        "channel": 8
-      },
-      "range_us": {
-        "min": 1300,
-        "max": 1900
-      }
-    },
-    {
-      "id": "black_diamond",
-      "label": "Black Diamond",
-      "type": "servo_gate",
-      "location": "Flexi pipe dropping out of the everest connection",
-      "address": {
-        "board": "everest_pca9685_0x50",
-        "channel": 0
-      },
-      "range_us": {
-        "min": 1007,
-        "max": 1833
-      }
-    },
-    {
-      "id": "island_branch_overhead_arm",
-      "label": "Island Branch Overhead Arm",
-      "type": "servo_gate",
-      "location": "Island Branch overhead articulating arm",
-      "address": {
-        "board": "everest_pca9685_0x50",
-        "channel": 1
-      },
-      "range_us": {
-        "min": 993,
-        "max": 1900
-      }
-    },
-    {
-      "id": "table_saw_hood",
-      "label": "Table Saw Hood",
-      "type": "servo_gate",
-      "location": "Table Saw Hood",
-      "address": {
-        "board": "everest_pca9685_0x50",
-        "channel": 2
-      },
-      "range_us": {
-        "min": 1367,
-        "max": 1813
-      }
-    },
-    {
-      "id": "table_saw_main",
-      "label": "Table Saw Main",
-      "type": "servo_gate",
-      "location": "Behind the table saw",
-      "address": {
-        "board": "island_pca9685_0x72",
-        "channel": 1
-      },
-      "range_us": {
-        "min": 973,
-        "max": 1833
-      }
-    },
-    {
-      "id": "router_table",
-      "label": "Router Table",
-      "type": "servo_gate",
-      "location": "Attached to rear of table saw",
-      "address": {
-        "board": "island_pca9685_0x72",
-        "channel": 2
-      },
-      "range_us": {
-        "min": 1067,
-        "max": 1833
-      }
-    },
-    {
-      "id": "sanding_table",
-      "label": "Sanding Table",
-      "type": "servo_gate",
-      "location": "Sanding Table",
-      "address": {
-        "board": "island_pca9685_0x72",
-        "channel": 3
-      },
-      "range_us": {
-        "min": 1367,
-        "max": 1700
-      }
-    },
-    {
-      "id": "planer",
-      "label": "Planer",
-      "type": "servo_gate",
-      "location": "Attached to rear of table saw, first.",
-      "address": {
-        "board": "island_pca9685_0x72",
-        "channel": 0
-      },
-      "range_us": {
-        "min": 1267,
-        "max": 1833
-      }
+    "range": {
+      "close": 1300,
+      "open": 2100
     }
-  ]
+  },
+  {
+    "id": "hose",
+    "label": "HOSE",
+    "type": "servo_gate",
+    "location": "By the Pi",
+    "address": {
+      "board": "master_pca9685_0x41",
+      "channel": 1
+    },
+    "range": {
+      "close": 1213,
+      "open": 1747
+    }
+  },
+  {
+    "id": "miter_saw",
+    "label": "Miter Saw",
+    "type": "servo_gate",
+    "location": "Below the miter saw",
+    "address": {
+      "board": "master_pca9685_0x41",
+      "channel": 2
+    },
+    "range": {
+      "close": 1173,
+      "open": 1833
+    }
+  },
+  {
+    "id": "miter_saw_left",
+    "label": "MiterSaw Left",
+    "type": "servo_gate",
+    "location": "Below the miter saw to the left",
+    "address": {
+      "board": "master_pca9685_0x41",
+      "channel": 3
+    },
+    "range": {
+      "close": 1967,
+      "open": 1167
+    }
+  },
+  {
+    "id": "miter_saw_right",
+    "label": "MiterSaw Right",
+    "type": "servo_gate",
+    "location": "Below the miter saw to the left",
+    "address": {
+      "board": "master_pca9685_0x41",
+      "channel": 4
+    },
+    "range": {
+      "close": 933,
+      "open": 1900
+    }
+  },
+  {
+    "id": "floor_sweep",
+    "label": "FloorSweep",
+    "type": "servo_gate",
+    "location": "FloorSweep",
+    "address": {
+      "board": "master_pca9685_0x41",
+      "channel": 6
+    },
+    "range": {
+      "close": 1300,
+      "open": 1967
+    }
+  },
+  {
+    "id": "corner_branch",
+    "label": "Corner Branch",
+    "type": "servo_gate",
+    "location": "Corner Branch",
+    "address": {
+      "board": "master_pca9685_0x41",
+      "channel": 7
+    },
+    "range": {
+      "close": 1200,
+      "open": 1833
+    }
+  },
+  {
+    "id": "band_saw",
+    "label": "Band Saw",
+    "type": "servo_gate",
+    "location": "Below the BandSaw directly after the corner branch split",
+    "address": {
+      "board": "master_pca9685_0x41",
+      "channel": 5
+    },
+    "range": {
+      "close": 1153,
+      "open": 1700
+    }
+  },
+  {
+    "id": "drill_press",
+    "label": "Drill Press",
+    "type": "servo_gate",
+    "location": "Behind the drill press",
+    "address": {
+      "board": "master_pca9685_0x41",
+      "channel": 8
+    },
+    "range": {
+      "close": 1300,
+      "open": 1900
+    }
+  },
+  {
+    "id": "black_diamond",
+    "label": "Black Diamond",
+    "type": "servo_gate",
+    "location": "Flexi pipe dropping out of the everest connection",
+    "address": {
+      "board": "everest_pca9685_0x50",
+      "channel": 0
+    },
+    "range": {
+      "close": 1007,
+      "open": 1833
+    }
+  },
+  {
+    "id": "island_branch_overhead_arm",
+    "label": "Island Branch Overhead Arm",
+    "type": "servo_gate",
+    "location": "Island Branch overhead articulating arm",
+    "address": {
+      "board": "everest_pca9685_0x50",
+      "channel": 1
+    },
+    "range": {
+      "close": 993,
+      "open": 1900
+    }
+  },
+  {
+    "id": "table_saw_hood",
+    "label": "Table Saw Hood",
+    "type": "servo_gate",
+    "location": "Table Saw Hood",
+    "address": {
+      "board": "everest_pca9685_0x50",
+      "channel": 2
+    },
+    "range": {
+      "close": 1367,
+      "open": 1813
+    }
+  },
+  {
+    "id": "table_saw_main",
+    "label": "Table Saw Main",
+    "type": "servo_gate",
+    "location": "Behind the table saw",
+    "address": {
+      "board": "island_pca9685_0x72",
+      "channel": 1
+    },
+    "range": {
+      "close": 973,
+      "open": 1833
+    }
+  },
+  {
+    "id": "router_table",
+    "label": "Router Table",
+    "type": "servo_gate",
+    "location": "Attached to rear of table saw",
+    "address": {
+      "board": "island_pca9685_0x72",
+      "channel": 2
+    },
+    "range": {
+      "close": 1000,
+      "open": 1833
+    }
+  },
+  {
+    "id": "sanding_table",
+    "label": "Sanding Table",
+    "type": "servo_gate",
+    "location": "Sanding Table",
+    "address": {
+      "board": "island_pca9685_0x72",
+      "channel": 3
+    },
+    "range": {
+      "close": 1367,
+      "open": 1700
+    }
+  },
+  {
+    "id": "planer",
+    "label": "Planer",
+    "type": "servo_gate",
+    "location": "Attached to rear of table saw, first.",
+    "address": {
+      "board": "island_pca9685_0x72",
+      "channel": 0
+    },
+    "range": {
+      "close": 1267,
+      "open": 1833
+    }
+  }
+]

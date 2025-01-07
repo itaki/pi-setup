@@ -1,0 +1,31 @@
+# pip install -r requirements.txt
+
+# Basic dependencies
+loguru
+
+# GUI
+# PyQt6
+
+# Adafruit CircuitPython libraries
+adafruit-circuitpython-servokit
+adafruit-board-toolkit
+adafruit-blinka
+adafruit-platformdetect
+adafruit-circuitpython-ads1x15
+adafruit-circuitpython-mcp230xx
+adafruit-circuitpython-pca9685
+#python-smbus - needs to be installed by sudo apt install python3-smbus 
+
+# Math
+numpy
+scipy
+matplotlib
+pandas
+matplotlib  
+pyarrow
+# psutil
+
+# Testing and utilities
+# pytest
+# keyboard
+# seaborn

@@ -1,0 +1,147 @@
+[
+    {
+        "id": "e4e9c3c8edeec332",
+        "type": "switch",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Gate Switcher",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "everst_access",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "hose",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "mitersaw",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "mitersaw_left",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "mitersaw_right",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "floorsweep",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "corner_branch",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "bandsaw",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "drill_press",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "black_diamond",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "island_branch_overhead_arm",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "table_saw_hood",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "table_saw_main",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "router_table",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "sanding_table",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Planer",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 16,
+        "x": 1460,
+        "y": 840,
+        "wires": [
+            [
+                "bd8b398c0dc020e3"
+            ],
+            [
+                "86ff070a22ce02d9"
+            ],
+            [
+                "f27cde2a395d751f"
+            ],
+            [
+                "4bfe013036bea6a3"
+            ],
+            [
+                "93a119e7850a9e6f"
+            ],
+            [
+                "3058fa0f4529d9ee"
+            ],
+            [
+                "c545f90fdcbdb66d"
+            ],
+            [
+                "13f023f6f7a6383a"
+            ],
+            [
+                "b2d94881c917fd0c"
+            ],
+            [
+                "3601133c01c5bfd8"
+            ],
+            [
+                "498e40799e1d0e62"
+            ],
+            [
+                "6d1122942a633635"
+            ],
+            [
+                "06e46a1f992a6e38"
+            ],
+            [
+                "b67b1cb5a4955eae"
+            ],
+            [
+                "923a614c8dd979a7"
+            ],
+            [
+                "1694480d053dcddc"
+            ]
+        ]
+    }
+]

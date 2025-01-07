@@ -1,0 +1,100 @@
+[
+    {
+      "label": "Hose Button",
+      "type": "button",
+      "id": "hose_button",
+      "location": "By the Hose",
+      "address": {
+        "chip": "MCP23017 @ 1:20H",
+        "pin": 0
+      },
+      "preferences": {
+        "collector_prefs": [
+          {
+            "name": "main_collector",
+            "spin_down_time": 0
+          }
+        ],
+        "gate_prefs": ["HOSE", "Corner_Branch"],
+        "light_prefs": ["hose_button_LED"]
+      }
+    },
+    {
+      "label": "Router Table Button",
+      "type": "button",
+      "id": "router_table_button",
+      "location": "By the pi, old right miter saw button",
+      "address": {
+        "chip": "MCP23017 @ 1:24H",
+        "pin": 2
+      },
+      "preferences": {
+        "collector_prefs": [
+          {
+            "name": "main_collector",
+            "spin_down_time": 0
+          },
+          {
+            "name": "central_air_filter",
+            "spin_down_time": 0
+          }
+        ],
+        "gate_prefs": ["Router_Table", "Black_Diamond", "Everest_Access"],
+        "light_prefs": ["router_table_button_LED"]
+      }
+    },
+    {
+      "label": "Overhead Hose Button",
+      "type": "button",
+      "id": "overhead_hose_button",
+      "location": "By the pi",
+      "address": {
+        "chip": "MCP23017 @ 1:20H",
+        "pin": 1
+      },
+      "preferences": {
+        "collector_prefs": [
+          {
+            "name": "main_collector",
+            "spin_down_time": 0
+          },
+          {
+            "name": "central_air_filter",
+            "spin_down_time": 0
+          }
+        ],
+        "gate_prefs": ["Everest_Access", "Island_Branch_Overhead_Arm"],
+        "light_prefs": ["overhead_hose_button_LED"]
+      }
+    },
+    {
+      "label": "Miter Saw Left Button",
+      "type": "button",
+      "id": "miter_saw_left_button",
+      "location": "By the Miter Saw",
+      "address": {
+        "chip": "MCP23017 @ 1:20H",
+        "pin": 3
+      },
+      "preferences": {
+        "collector_prefs": [],
+        "gate_prefs": ["MiterSaw_Left"],
+        "light_prefs": ["miter_saw_left_button_LED"]
+      }
+    },
+    {
+      "label": "Miter Saw Right Button",
+      "type": "button",
+      "id": "miter_saw_right_button",
+      "location": "By the Miter Saw",
+      "address": {
+        "chip": "MCP23017 @ 1:20H",
+        "pin": 4
+      },
+      "preferences": {
+        "collector_prefs": [],
+        "gate_prefs": ["MiterSaw_Right"],
+        "light_prefs": ["miter_saw_right_button_LED"]
+      }
+    }
+  ]
