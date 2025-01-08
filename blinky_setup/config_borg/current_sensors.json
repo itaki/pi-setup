@@ -1,0 +1,127 @@
+let current_sensors = [
+    {
+        "label": "Miter Saw Current Sensor",
+        "type": "current_sensor",
+        "id": "miter_saw_current_sensor",
+        "location": "By the Miter Saw",
+        "address": {
+            "board": "ADS1115 on I2C-1, Addr 0x48",
+            "channel": "channel_0"
+        },
+        "preferences": {
+            "threshold": 0.03,
+            "collector_prefs": [
+                {
+                    "name": "main_collector",
+                    "spin_down_time": 10
+                },
+                {
+                    "name": "central_air_filter",
+                    "spin_down_time": 0
+                }
+            ],
+            "gate_prefs": ["MiterSaw", "MiterSaw_Right"],
+            "light_prefs": []
+        }
+    },
+    {
+        "label": "Band Saw Current Sensor",
+        "type": "current_sensor",
+        "id": "band_saw_current_sensor",
+        "location": "By the Band Saw",
+        "address": {
+            "board": "ADS1115 on I2C-1, Addr 0x48",
+            "channel": "channel_3"
+        },
+        "preferences": {
+            "threshold": 0.031,
+            "collector_prefs": [
+                {
+                    "name": "main_collector",
+                    "spin_down_time": 10
+                },
+                {
+                    "name": "central_air_filter",
+                    "spin_down_time": 0
+                }
+            ],
+            "gate_prefs": ["BandSaw", "Corner_Branch"],
+            "light_prefs": []
+        }
+    },
+    {
+        "label": "Table Saw Current Sensor",
+        "type": "current_sensor",
+        "id": "table_saw_current_sensor",
+        "location": "By the Table Saw",
+        "address": {
+            "board": "ADS1115 on I2C-1, Addr 0x4a",
+            "channel": "channel_0"
+        },
+        "preferences": {
+            "threshold": 0.0300,
+            "collector_prefs": [
+                {
+                    "name": "main_collector",
+                    "spin_down_time": 10
+                },
+                {
+                    "name": "central_air_filter",
+                    "spin_down_time": 0
+                }
+            ],
+            "gate_prefs": ["Table_Saw_Main", "Black_Diamond", "Everest_Access"]
+        }
+    },
+    {
+        "label": "Router Table Current Sensor",
+        "type": "current_sensor",
+        "id": "router_table_current_sensor",
+        "location": "By the Table Saw",
+        "address": {
+            "board": "ADS1115 on I2C-1, Addr 0x4a",
+            "channel": "channel_2"
+        },
+        "preferences": {
+            "threshold": 0.030,
+            "collector_prefs": [
+                {
+                    "name": "main_collector",
+                    "spin_down_time": 10
+                },
+                {
+                    "name": "central_air_filter",
+                    "spin_down_time": 0
+                }
+            ],
+            "gate_prefs": ["Router_Table", "Black_Diamond", "Everest_Access"]
+        }
+    },
+    {
+        "label": "Planer Current Sensor",
+        "type": "current_sensor",
+        "id": "planer_current_sensor",
+        "location": "By the Table Saw",
+        "address": {
+            "board": "ADS1115 on I2C-1, Addr 0x4a",
+            "channel": "channel_1"
+        },
+        "preferences": {
+            "threshold": 0.03,
+            "collector_prefs": [
+                {
+                    "name": "main_collector",
+                    "spin_down_time": 10
+                },
+                {
+                    "name": "central_air_filter",
+                    "spin_down_time": 0
+                }
+            ],
+            "gate_prefs": ["Planer", "Black_Diamond", "Everest_Access"]
+        }
+    }
+];
+
+global.set("current_sensors", current_sensors);
+return msg;

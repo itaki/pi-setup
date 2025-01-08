@@ -1,0 +1,48 @@
+[
+    {
+      "label": "Button RGBLED",
+      "type": "pwm_rgbled_button",
+      "styles": {
+        "true": {
+          "style": "pulse",
+          "red": 100,
+          "green": 0,
+          "blue": 100
+        },
+        "false": {
+          "style": "solid",
+          "red": 90,
+          "green": 90,
+          "blue": 20
+        }
+      }
+    },
+    {
+      "label": "Button LED",
+      "type": "pwm_led_button",
+      "styles": {
+        "true": {
+          "style": "pulse",
+          "value": 30
+        },
+        "false": {
+          "style": "solid",
+          "value": 100
+        }
+      }
+    },
+    {
+      "label": "Light",
+      "type": "relay",
+      "styles": {
+        "true": {
+          "style": "solid",
+          "value": 1
+        },
+        "false": {
+          "style": "solid",
+          "value": 0
+        }
+      }
+    }
+  ]

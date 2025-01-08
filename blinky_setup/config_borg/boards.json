@@ -1,0 +1,100 @@
+let boards = [
+    {
+        "label": "GPIO Expander - Master Control",
+        "type": "MCP23017",
+        "id": "master_control_gpio_expander",
+        "chip": "MCP23017 @ 1:20H",
+        "location": "Master Control",
+        "i2c_address": {"hex": "0x20", "dec": 32},
+        "purpose": "Button Management"
+    },
+    {
+        "label": "PWM Servo - Master Control",
+        "type": "PCA9685",
+        "id": "master_control_pwm_servo",
+        "chip": "PCA9685 on I2C-1, Addr 65",
+        "location": "Master Control",
+        "i2c_address": {"hex": "0x41", "dec": 65},
+        "purpose": "Servo Control",
+        "frequency": 50
+    },
+    {
+        "label": "PWM LED - Master Control",
+        "type": "PCA9685",
+        "id": "master_control_pwm_led",
+        "chip": "PCA9685 on I2C-1, Addr 64",
+        "location": "Master Control",
+        "i2c_address": {"hex": "0x40", "dec": 64},
+        "purpose": "LED Control",
+        "frequency": 1000
+    },
+    {
+        "label": "AD Converter - Master Control",
+        "type": "ADS1115",
+        "id": "master_control_ad_converter",
+        "chip": "ADS1115 on I2C-1, Addr 0x48",
+        "location": "Master Control",
+        "i2c_address": {"hex": "0x48", "dec": 72},
+        "purpose": "Voltage Sensing"
+    },
+    {
+        "label": "GPIO Expander - Island",
+        "type": "MCP23017",
+        "id": "island_gpio_expander",   
+        "chip": "MCP23017 @ 1:20H",
+        "location": "Center Island",
+        "i2c_address": {"hex": "0x24", "dec": 36},
+        "purpose": "Button Management"
+    },
+    {
+        "label": "PWM Servo - Island",
+        "type": "PCA9685",
+        "id": "island_pwm_servo",
+        "chip": "PCA9685 on I2C-1, Addr 80",
+        "location": "Center Island",
+        "i2c_address": {"hex": "0x50", "dec": 80},
+        "purpose": "Servo Control",
+        "frequency": 50
+    },
+    {
+        "label": "PWM LED - Island",
+        "type": "PCA9685",
+        "id": "island_pwm_led",
+        "chip": "PCA9685 on I2C-1, Addr 76",
+        "location": "Center Island",
+        "i2c_address": {"hex": "0x4c", "dec": 76},
+        "purpose": "LED Control",
+        "frequency": 1000
+    },
+    {
+        "label": "AD Converter - Island",
+        "type": "ADS1115",
+        "id": "island_ad_converter",
+        "chip": "ADS1115 on I2C-1, Addr 0x4a",
+        "location": "Center Island",
+        "i2c_address": {"hex": "0x4a", "dec": 74},
+        "purpose": "Voltage Sensing"
+    },
+    {
+        "label": "PWM Servo - Everest",
+        "type": "PCA9685",
+        "id": "everest_pwm_servo",
+        "chip": "PCA9685 on I2C-1, Addr 114",
+        "location": "Above the table saw",
+        "i2c_address": {"hex": "0x72", "dec": 114},
+        "purpose": "Servo Control",
+        "frequency": 50
+    },
+    {
+        "label": "PWM LED - Everest",
+        "type": "PCA9685",
+        "id": "everest_pwm_led",
+        "chip": "PCA9685 on I2C-1, Addr 116",
+        "location": "Above the table saw",
+        "i2c_address": {"hex": "0x74", "dec": 116},
+        "purpose": "LED Control",
+        "frequency": 1000
+    }
+];
+global.set("boards", boards);
+return msg;

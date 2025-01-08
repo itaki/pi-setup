@@ -1,0 +1,81 @@
+[
+    {
+        "label": "Hose Button LED",
+        "type": "pwm_rgbled_button",
+        "id": "hose_button_LED",
+        "location": "On the hose button",
+        "address": {
+            "chip": "PCA9685 on I2C-1, Addr 64",
+            "pins": [0, 1, 2]
+        },
+        "styles": {
+            "true": {
+                "style": "pulse",
+                "red": 0,
+                "green": 100,
+                "blue": 0
+            },
+            "false": {
+                "style": "solid",
+                "red": 90,
+                "green": 20,
+                "blue": 90
+            }
+        }
+    },
+    {
+        "label": "Overhead Hose Button LED",
+        "type": "pwm_rgbled_button",
+        "id": "overhead_hose_button_LED",
+        "location": "On the hose button",
+        "address": {
+            "chip": "PCA9685 on I2C-1, Addr 76",
+            "pins": [3, 4, 5]
+        },
+        "styles": {}
+    },
+    {
+        "label": "Router Table Button LED",
+        "type": "pwm_rgbled_button",
+        "id": "router_table_button_LED",
+        "location": "On the right miter saw button",
+        "address": {
+            "chip": "PCA9685 on I2C-1, Addr 76",
+            "pins": [6, 7, 8]
+        },
+        "styles": {}
+    },
+    {
+        "label": "Miter Saw Left Button LED",
+        "type": "pwm_rgbled_button",
+        "id": "miter_saw_left_button_LED",
+        "location": "On the miter saw left button",
+        "address": {
+            "chip": "PCA9685 on I2C-1, Addr 64",
+            "pin": 9
+        },
+        "styles": {}
+    },
+    {
+        "label": "Miter Saw Right Button LED",
+        "type": "pwm_led_button",
+        "id": "miter_saw_right_button_LED",
+        "location": "On the miter saw right button",
+        "address": {
+            "chip": "PCA9685 on I2C-1, Addr 64",
+            "pin": 10
+        },
+        "styles": {}
+    },
+    {
+        "label": "Bench Light",
+        "type": "relay",
+        "id": "bench",
+        "location": "On the miter saw button",
+        "address": {
+            "chip": "MCP23017 on I2C-1, Addr 20",
+            "pin": 5
+        },
+        "styles": {}
+    }
+];
