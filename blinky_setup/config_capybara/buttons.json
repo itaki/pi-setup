@@ -49,7 +49,7 @@
       "id": "overhead_hose_button",
       "location": "By the pi",
       "address": {
-        "chip": "MCP23017 @ 1:20H",
+        "chip": "MCP23017 @ 1:24H",
         "pin": 1
       },
       "preferences": {

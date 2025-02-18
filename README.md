@@ -232,6 +232,12 @@ The terminal doesn't default to ZSH on the remote CURSOR. But you can manually c
 IF FONT IS NOT WORKING---
 Visual Studio Code: Open File → Preferences → Settings (PC) or Code → Preferences → Settings (Mac), enter terminal.integrated.fontFamily in the search box at the top of Settings tab and set the value below to MesloLGS NF.
 
+### Install other fonts
+```sudo apt update
+sudo apt install fonts-noto-color-emoji
+sudo apt install fonts-dejavu
+sudo apt install fonts-symbola
+```
 
 ### Upgrade Python
 https://raspberrytips.com/install-latest-python-raspberry-pi/

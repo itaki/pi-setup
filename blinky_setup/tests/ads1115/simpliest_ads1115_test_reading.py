@@ -5,9 +5,9 @@ import adafruit_ads1x15.ads1115 as ADS
 from adafruit_ads1x15.analog_in import AnalogIn
 import time
 
-ADDRESS = 0x4a # 4a for island, 48 for main
+ADDRESS = 0x49 # 4a for island, 48 for main
 GAIN = 1
-DATA_RATE = 128 # Set the desired data rate in samples per second (SPS)
+DATA_RATE = 16 # Set the desired data rate in samples per second (SPS)
 NUMBER_OF_READINGS = 100  
 BREATH_BETWEEN_READINGS = 1.0 / DATA_RATE  # Calculate the sleep time between readings based on the data rate
 
@@ -19,13 +19,16 @@ ads = ADS.ADS1115(i2c, address=ADDRESS, gain=GAIN)
 ads.data_rate = DATA_RATE
 
 # Create a single-ended input on channel 0 (P0)
-chan = AnalogIn(ads, ADS.P0)
+chan0 = AnalogIn(ads, ADS.P0)
+chan1 = AnalogIn(ads, ADS.P1)
+chan2 = AnalogIn(ads, ADS.P2)
+chan3 = AnalogIn(ads, ADS.P3)
 
 # Continuously read the voltage
 try:
     start_time = time.time()
     for i in range(NUMBER_OF_READINGS):
-        reading = chan.voltage
+        reading = [chan0.voltage, chan1.voltage, chan2.voltage, chan3.voltage]
         print(f"Voltage: {reading} V")
         #time.sleep(BREATH_BETWEEN_READINGS)
     end_time = time.time()

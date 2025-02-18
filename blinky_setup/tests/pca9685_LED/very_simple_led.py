@@ -7,7 +7,7 @@ import time
 i2c = busio.I2C(board.SCL, board.SDA)
 
 # Define the PCA9685 board configuration
-i2c_address = 0x40  # I2C address for the PCA9685
+i2c_address = 0x42  # I2C address for the PCA9685
 frequency = 1000  # Frequency for LED control
 
 # Initialize the PCA9685 board

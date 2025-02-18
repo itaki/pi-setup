@@ -1,0 +1,3842 @@
+[
+    {
+        "id": "7fe8840fae250fc8",
+        "type": "tab",
+        "label": "MainFlow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "46a8f0f085fb3f7f",
+        "type": "tab",
+        "label": "Basic shop layout",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e36b9e24a4f22b67",
+        "type": "tab",
+        "label": "Checkbox Example",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "f7b0c238b5ec10f3",
+        "type": "tab",
+        "label": "PCA9685 test",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b3f25ea1b0799d43",
+        "type": "tab",
+        "label": "GUI Button test",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4e4325bb8b80a2d2",
+        "type": "tab",
+        "label": "Blue button Test",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b9050601429adda4",
+        "type": "mcp pcf chip",
+        "chipType": "MCP23017",
+        "busNum": "1",
+        "addr": "0X20",
+        "mcpInputOverride": false,
+        "interval": 100,
+        "startAllHIGH": false,
+        "logging": false
+    },
+    {
+        "id": "b8cfe0329ed84e2a",
+        "type": "PCA9685",
+        "deviceNumber": 1,
+        "address": "67",
+        "frequency": 50
+    },
+    {
+        "id": "0a8fbbe4b9c54f62",
+        "type": "PCA9685",
+        "deviceNumber": 2,
+        "address": 80,
+        "frequency": 50
+    },
+    {
+        "id": "9fcdbe46726f4ab4",
+        "type": "PCA9685",
+        "deviceNumber": 3,
+        "address": 114,
+        "frequency": 50
+    },
+    {
+        "id": "64534f8a53d284df",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#09776f",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#09776f",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#09776f",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0ebeb1",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#09776f",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "1372611ce920f7a2",
+        "type": "ui_tab",
+        "name": "RUDI",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c4312b06d2d526ce",
+        "type": "ui_group",
+        "name": "Tools",
+        "tab": "1372611ce920f7a2",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f33621bba644f425",
+        "type": "ui_group",
+        "name": "Devices",
+        "tab": "1372611ce920f7a2",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "90d18a3671fcb383",
+        "type": "ui_group",
+        "name": "Dust Collectors",
+        "tab": "1372611ce920f7a2",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7deb25df3b926af2",
+        "type": "ui_tab",
+        "name": "Shopbot",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8d82066d5f4fbc1d",
+        "type": "ui_group",
+        "name": "LED Status Group",
+        "tab": "7deb25df3b926af2",
+        "order": 1,
+        "disp": true,
+        "width": 8,
+        "collapse": false
+    },
+    {
+        "id": "68837b2a054d0777",
+        "type": "ui_group",
+        "name": "LED_Info",
+        "tab": "7deb25df3b926af2",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "567e2ac78ec16f79",
+        "type": "ui_tab",
+        "name": "Hide_Show",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8b1d7494c9531386",
+        "type": "ui_group",
+        "name": "Function",
+        "tab": "567e2ac78ec16f79",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b2c9019a972a1a96",
+        "type": "ui_group",
+        "name": "Settings",
+        "tab": "567e2ac78ec16f79",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "186acf44baab69a0",
+        "type": "ui_spacer",
+        "z": "b3f25ea1b0799d43",
+        "name": "spacer",
+        "group": "68837b2a054d0777",
+        "order": 3,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "fea3245e89cd2292",
+        "type": "ui_group",
+        "name": "Gates",
+        "tab": "1372611ce920f7a2",
+        "order": 4,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4dd233372353c072",
+        "type": "ui_group",
+        "name": "HoseConfig",
+        "tab": "1372611ce920f7a2",
+        "order": 5,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8d6bba79fe238d2a",
+        "type": "ui_tab",
+        "name": "Gates",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2c04fd6e02f0b73f",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "8d6bba79fe238d2a",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d0418e32e68cb88f",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ec8f7d40f4a60f38",
+        "type": "ui_group",
+        "name": "Default Group",
+        "tab": "d0418e32e68cb88f",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "dashboard_tab",
+        "type": "ui_tab",
+        "name": "Default Tab",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "dashboard_group",
+        "type": "ui_group",
+        "name": "Default Group",
+        "tab": "dashboard_tab",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "6ce45bce.cdff94",
+        "type": "PCA9685",
+        "deviceNumber": "1",
+        "address": "64",
+        "frequency": "50"
+    },
+    {
+        "id": "bfab4cae133c7076",
+        "type": "mcp pcf chip",
+        "chipType": "MCP23017",
+        "busNum": "1",
+        "addr": "0X24",
+        "mcpInputOverride": false,
+        "interval": 100,
+        "startAllHIGH": false,
+        "logging": false
+    },
+    {
+        "id": "43261120e4ad7022",
+        "type": "PCA9685",
+        "deviceNumber": 1,
+        "address": "65",
+        "frequency": "2000"
+    },
+    {
+        "id": "d472327e8061ed7e",
+        "type": "function",
+        "z": "7fe8840fae250fc8",
+        "name": "Hose Helper",
+        "func": "// We only run this if msg.payload is true/false\nmsg.payload = {\n    button_id: \"hose_button\",\n    state: msg.payload\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5494988ad4e3352f",
+        "type": "function",
+        "z": "7fe8840fae250fc8",
+        "name": "Button Monitor",
+        "func": "// Retrieve or initialize the dictionary of button states\nlet buttonStates = context.flow.get('buttonStates') || {};\n\n// 1. Extract button_id and state from the message\nlet buttonId = msg.payload.button_id;\nlet buttonPressed = msg.payload.state;\n\n// If button_id is missing, log a warning and exit\nif (!buttonId) {\n    node.warn(\"Button Manager: No button_id found in msg.payload\");\n    return null;\n}\n\n// 2. Toggle the state if the button was pressed\nif (buttonPressed === true) {\n    // Toggle the current state for this button\n    let currentState = buttonStates[buttonId] || false; // Default state is OFF\n    let newState = !currentState;\n\n    // Update the buttonStates dictionary\n    buttonStates[buttonId] = newState;\n    context.flow.set('buttonStates', buttonStates);\n\n    // Update node status for debugging\n    if (newState) {\n        node.status({ fill: \"green\", shape: \"dot\", text: `${buttonId} ON` });\n    } else {\n        node.status({ fill: \"red\", shape: \"dot\", text: `${buttonId} OFF` });\n    }\n\n    // Build output message\n    msg.payload = {\n        button_id: buttonId,\n        state: newState\n    };\n\n    return msg;\n}\n\n// If button was not pressed, do nothing\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 1060,
+        "wires": [
+            [
+                "69727381bd9d9467",
+                "6716beabdb32263c",
+                "1f90dcddf5c248cc"
+            ]
+        ]
+    },
+    {
+        "id": "b05d905bd63a70a0",
+        "type": "debug",
+        "z": "7fe8840fae250fc8",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "69727381bd9d9467",
+        "type": "function",
+        "z": "7fe8840fae250fc8",
+        "name": "Gate Manager",
+        "func": "let gates = global.get(\"gates\") || [];\n\nif (!msg.payload || !msg.payload.button_id || msg.payload.state === undefined) {\n    node.warn(\"Gate Manager: Invalid input message\");\n    return null;\n}\n\nlet buttonState = msg.payload.state;\n\n// Dynamic gate map\nlet gateNodeMap = {};\ngates.forEach(gate => {\n    if (gate.address && gate.address.board && gate.address.channel !== undefined) {\n        gateNodeMap[gate.id] = {\n            board: gate.address.board,\n            channel: gate.address.channel,\n            range_us: gate.range_us\n        };\n    } else {\n        node.warn(`Gate Manager: Incomplete gate config for gate ID: ${gate.id}`);\n    }\n});\n\n// Messages to set positions\nlet positionCommands = gates.map(gate => {\n    let gateId = gate.id;\n    let nodeDetails = gateNodeMap[gateId];\n    if (!nodeDetails) return null;\n\n    let targetPulse = buttonState ? nodeDetails.range_us.max : nodeDetails.range_us.min;\n    return { topic: gateId, payload: targetPulse };\n}).filter(Boolean);\n\n// Messages to turn off servos\nlet offCommands = gates.map(gate => {\n    return { topic: gate.id, payload: 0 };\n}).filter(Boolean);\n\n// Send position commands, then turn off after a delay\nnode.send([positionCommands]);\nsetTimeout(() => {\n    node.send([offCommands]);\n}, 500); // 500ms delay to allow servos to move\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1720,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ea31436dae50239f",
+        "type": "function",
+        "z": "7fe8840fae250fc8",
+        "name": "Router Table Helper",
+        "func": "// We only run this if msg.payload is true/false\nmsg.payload = {\n    button_id: \"router_table_button\",\n    state: msg.payload\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 1240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9b15753d95af7529",
+        "type": "inject",
+        "z": "7fe8840fae250fc8",
+        "name": "Router Inject Button",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"button_id\":\"router_table_button\",\"state\":true}",
+        "payloadType": "json",
+        "x": 130,
+        "y": 1300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bdf73412b6dced05",
+        "type": "debug",
+        "z": "7fe8840fae250fc8",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "6716beabdb32263c",
+        "type": "function",
+        "z": "7fe8840fae250fc8",
+        "name": "Collector Manager",
+        "func": "// Retrieve or initialize the active tools state\nlet activeTools = context.flow.get('activeTools') || {};\n\n// Extract button_id and state from the message\nlet buttonId = msg.payload.button_id;\nlet buttonState = msg.payload.state;\n\n// Update the active tools state\nif (buttonState === true) {\n    activeTools[buttonId] = true; // Tool is ON\n} else {\n    delete activeTools[buttonId]; // Tool is OFF\n}\n\n// Update the context\ncontext.flow.set('activeTools', activeTools);\n\n// Determine if any tools are active\nlet isCollectorOn = Object.keys(activeTools).length > 0;\n\n// Output message to control the dust collector\nreturn { payload: isCollectorOn };\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1770,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "130c9685a1848b40",
+        "type": "function",
+        "z": "7fe8840fae250fc8",
+        "name": "Current Monitor",
+        "func": "// Configurable Variables\nconst NUM_READINGS = 20; // Number of readings to start and average\nconst TRIM = 10; // Percent of readings from top and bottom to trim before averaging\nconst MEMORY_SIZE = 10; // Number of readings to keep in memory (rolling window)\nconst NUM_TRIGGERS = 3; // Number of readings over or under the thresholds needed to turn tool on\nconst ERROR_THRESHOLD = 100; // Number of null readings to trigger \"off\" state\nconst boardName = \"ADS1115 on I2C-1, Addr 0x48\"; // Board name to track tools\n\n// Initialize tools from global config\nconst config = global.get('current_sensors') || [];\nconst tools = config.filter(tool => tool.address.board === boardName);\n\n// Initialize tool tracking structures\nlet toolsStatus = {};\ntools.forEach(tool => {\n    toolsStatus[tool.id] = {\n        rollingWindows: {\n            [`${tool.address.channel}_readings`]: [] // Create a rolling window for the specific channel\n        },\n        errorCount: 0,\n        toolStatus: false\n    };\n});\n\n// Helper function to calculate average, trimming top/bottom readings\nfunction calculateAverage(readings) {\n    const sorted = readings.sort((a, b) => a - b);\n    const trimCount = Math.floor(readings.length * TRIM / 100);\n    const trimmed = sorted.slice(trimCount, sorted.length - trimCount);\n    const sum = trimmed.reduce((acc, val) => acc + val, 0);\n    return sum / trimmed.length;\n}\n\n// Helper function to process tool readings\nfunction processToolReadings(toolId, voltageReading) {\n    const tool = tools.find(t => t.id === toolId);\n    if (!tool) return;\n\n    const toolStatus = toolsStatus[toolId];\n    const channelKey = `${tool.address.channel}_readings`; // Access rolling window by channel\n\n    // Print out the current voltage reading for debugging\n    console.log(`Reading voltage for ${tool.label} (Channel: ${tool.address.channel}) - Voltage: ${voltageReading}`);\n\n    // Update rolling window for the channel\n    toolStatus.rollingWindows[channelKey].push(voltageReading);\n\n    // Ensure we only keep MEMORY_SIZE readings\n    if (toolStatus.rollingWindows[channelKey].length > MEMORY_SIZE) {\n        toolStatus.rollingWindows[channelKey].shift();\n    }\n\n    // Print out the current rolling window for debugging\n    console.log(`${tool.label} (Channel: ${tool.address.channel}) - Current Rolling Window: ${toolStatus.rollingWindows[channelKey]}`);\n\n    // Calculate the average of the window\n    const average = calculateAverage(toolStatus.rollingWindows[channelKey]);\n    const max = average * (1 + tool.preferences.threshold);\n    const min = average * (1 - tool.preferences.threshold);\n\n    // Debugging: print average, min, and max\n    console.log(`${tool.label} (Channel: ${tool.address.channel}) - Average: ${average}, Min: ${min}, Max: ${max}`);\n\n    // Check if current reading is within the min/max range\n    const isReadingValid = voltageReading >= min && voltageReading <= max;\n\n    // Update tool status based on NUM_TRIGGERS\n    let triggers = 0;\n    toolStatus.rollingWindows[channelKey].forEach(reading => {\n        if (reading >= max || reading <= min) {\n            triggers++;\n        }\n    });\n\n    if (triggers >= NUM_TRIGGERS) {\n        toolStatus.toolStatus = true;\n    } else {\n        toolStatus.toolStatus = false;\n    }\n\n    // Error handling for null readings\n    if (voltageReading === null) {\n        toolStatus.errorCount++;\n        if (toolStatus.errorCount >= ERROR_THRESHOLD) {\n            toolStatus.toolStatus = false; // Turn tool off after ERROR_THRESHOLD nulls\n            console.log(`${tool.label} (Channel: ${tool.address.channel}) - Tool is OFF due to errors.`);\n        }\n    } else {\n        toolStatus.errorCount = 0; // Reset error count if valid reading\n    }\n\n    // Send tool status update (This is where you'd trigger on/off actions)\n    if (toolStatus.toolStatus) {\n        console.log(`${tool.label} is ON (Channel: ${tool.address.channel})`);\n    } else {\n        console.log(`${tool.label} is OFF (Channel: ${tool.address.channel})`);\n    }\n}\n\n// Function to handle incoming ADS1115 messages\nfunction handleADS1115Message(msg) {\n    // Extract the data from the message\n    const data = msg.payload[\"/dev/i2c-1\"][\"ads1115\"][\"0x48\"][\"singleEnded\"];\n\n    // Iterate over all tools and process their respective channel reading\n    tools.forEach(tool => {\n        console.log(`Tool: ${JSON.stringify(tool)}`); // Debug entire tool object\n        const channel = tool.address.channel; // Get channel from tool address\n\n        console.log(`Using Channel: ${channel}`); // Debug the channel value\n\n        // Check if the channel exists in the incoming data\n        if (!data[channel]) {\n            console.log(`Channel ${channel} not found in incoming data!`);\n            return; // Skip if the channel is missing\n        }\n\n        // Retrieve the voltage reading for the specific channel\n        const voltageReading = data[channel]?.Volts || null; // Retrieve voltage reading for the specific channel\n\n        // Debug: print the voltage reading\n        console.log(`Voltage Reading for ${tool.label} (Channel: ${channel}): ${voltageReading}`);\n\n        // Process the voltage reading for this tool\n        processToolReadings(tool.id, voltageReading);\n    });\n}\n\n\n\n\n// Call handle function for incoming message\nhandleADS1115Message(msg);\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 1620,
+        "wires": [
+            [
+                "b05d905bd63a70a0"
+            ]
+        ]
+    },
+    {
+        "id": "b8d5093e98d50375",
+        "type": "function",
+        "z": "7fe8840fae250fc8",
+        "name": "MiterSaw Left Helper",
+        "func": "// We only run this if msg.payload is true/false\nmsg.payload = {\n    button_id: \"mitersaw_left\",\n    state: msg.payload\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6fd2af2e44a99bca",
+        "type": "inject",
+        "z": "7fe8840fae250fc8",
+        "name": "MiterSaw Left Inject Button",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"button_id\":\"mitersaw_left_button\",\"state\":true}",
+        "payloadType": "json",
+        "x": 160,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "636d6603dd90b9fc",
+        "type": "inject",
+        "z": "7fe8840fae250fc8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 170,
+        "y": 720,
+        "wires": [
+            [
+                "e34759f5f0c37863"
+            ]
+        ]
+    },
+    {
+        "id": "3b272b1231dff7e2",
+        "type": "function",
+        "z": "7fe8840fae250fc8",
+        "name": "Fetch Hose Button Status",
+        "func": "const toolManagerState = global.get('toolManagerState') || {};\nconst hoseStatus = toolManagerState['hose'] || false;\n\nreturn {\n    topic: 'hose_button',\n    payload: hoseStatus\n};",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e648c58336eb1fbb",
+        "type": "ui_button",
+        "z": "7fe8840fae250fc8",
+        "name": "Dashboard Hose Button",
+        "group": "4dd233372353c072",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Toggle Hose",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{payload.color}}",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "hose_button",
+        "topicType": "str",
+        "x": 210,
+        "y": 660,
+        "wires": [
+            [
+                "e34759f5f0c37863"
+            ]
+        ]
+    },
+    {
+        "id": "e34759f5f0c37863",
+        "type": "function",
+        "z": "7fe8840fae250fc8",
+        "name": "Create Standard Message",
+        "func": "// Only process when button is pressed (payload: true)\nif (msg.payload !== true) return null;\n\n// Access global state\nconst toolManagerState = global.get('toolManagerState') || {};\nconst currentState = toolManagerState['hose'] || false;\n\n// Toggle the current state\nconst newState = !currentState;\nmsg.payload = {\n    button_id: \"hose_button\",\n    state: newState,\n    color: newState ? \"green\" : \"gray\" // Add color property\n};\n\n// Update global state\ntoolManagerState['hose'] = newState;\nglobal.set('toolManagerState', toolManagerState);\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 680,
+        "wires": [
+            [
+                "6e5cc94e45d76dcc",
+                "9f31c889e03b9383"
+            ]
+        ]
+    },
+    {
+        "id": "6e5cc94e45d76dcc",
+        "type": "function",
+        "z": "7fe8840fae250fc8",
+        "name": "Tool Manager",
+        "func": "const toolStates = global.get('toolManagerState') || {};\nconst activeTools = Object.keys(toolStates).filter(tool => toolStates[tool]);\n\nnode.status({\n    fill: \"green\",\n    shape: \"dot\",\n    text: `Active Tools: ${activeTools.join(', ')}`\n});\n\nreturn null;",
+        "outputs": 0,
+        "x": 1040,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "9f31c889e03b9383",
+        "type": "ui_button",
+        "z": "7fe8840fae250fc8",
+        "name": "Hose Config",
+        "group": "c4312b06d2d526ce",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "{{payload.state ? 'Hose: ON' : 'Hose: OFF'}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{payload.color}}",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "hose_button",
+        "topicType": "str",
+        "x": 790,
+        "y": 760,
+        "wires": [
+            [
+                "3b272b1231dff7e2",
+                "dfc7b2ed340a7ac7",
+                "bdf73412b6dced05"
+            ]
+        ]
+    },
+    {
+        "id": "dfc7b2ed340a7ac7",
+        "type": "function",
+        "z": "7fe8840fae250fc8",
+        "name": "function 1",
+        "func": "// Access global state for UI visibility\nconst uiState = global.get('uiState') || { hoseConfigVisible: false };\n\n// Toggle visibility\nuiState.hoseConfigVisible = !uiState.hoseConfigVisible;\n\n// Prepare message for ui_control\nmsg.payload = {\n    group: \"HoseConfig\", // The group to show/hide\n    hide: !uiState.hoseConfigVisible\n};\n\n// Save the updated state\nglobal.set('uiState', uiState);\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 860,
+        "wires": [
+            [
+                "1a5610fd89f2fc85"
+            ]
+        ]
+    },
+    {
+        "id": "1a5610fd89f2fc85",
+        "type": "ui_ui_control",
+        "z": "7fe8840fae250fc8",
+        "name": "",
+        "events": "all",
+        "x": 1120,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3d7543627d80e098",
+        "type": "debug",
+        "z": "7fe8840fae250fc8",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "573f10a86de2e067",
+        "type": "inject",
+        "z": "7fe8840fae250fc8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 600,
+        "wires": [
+            [
+                "53608455dbddcb00"
+            ]
+        ]
+    },
+    {
+        "id": "7e1456b93762e1db",
+        "type": "function",
+        "z": "7fe8840fae250fc8",
+        "name": "function 2",
+        "func": "// Function node script\nmsg.payload = msg.payload.map(addr => \"0x\" + addr.toString(16).padStart(2, '0'));\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 600,
+        "wires": [
+            [
+                "3d7543627d80e098"
+            ]
+        ]
+    },
+    {
+        "id": "53608455dbddcb00",
+        "type": "i2c scan",
+        "z": "7fe8840fae250fc8",
+        "name": "",
+        "busno": "1",
+        "x": 420,
+        "y": 600,
+        "wires": [
+            [
+                "3d7543627d80e098",
+                "7e1456b93762e1db"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "1f90dcddf5c248cc",
+        "type": "debug",
+        "z": "7fe8840fae250fc8",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1460,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "8f70449dda125c63",
+        "type": "inject",
+        "z": "7fe8840fae250fc8",
+        "name": "Hose Inject Button",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"button_id\":\"hose_button\",\"state\":true}",
+        "payloadType": "json",
+        "x": 130,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3a413beb8fac0857",
+        "type": "ads1x15_i2c",
+        "z": "7fe8840fae250fc8",
+        "property": "payload",
+        "name": "Current Sensor 0x48",
+        "i2c_device_number": 1,
+        "chip": "0x01",
+        "i2c_address": "0x48",
+        "inputsForChannel": "singleEnded",
+        "singleEndedChannel0": true,
+        "singleEndedChannel1": true,
+        "singleEndedChannel2": true,
+        "singleEndedChannel3": true,
+        "differentialChannel0_1": true,
+        "differentialChannel0_3": false,
+        "differentialChannel1_3": false,
+        "differentialChannel2_3": true,
+        "samplesPerSecond0": "920",
+        "samplesPerSecond1": "128",
+        "progGainAmp": "2048",
+        "x": 400,
+        "y": 1540,
+        "wires": [
+            [
+                "206ce75b64fa56f7"
+            ]
+        ]
+    },
+    {
+        "id": "inject1",
+        "type": "inject",
+        "z": "7fe8840fae250fc8",
+        "name": "Read ADS1x15",
+        "props": [],
+        "repeat": ".1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "x": 140,
+        "y": 1540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a21ecbc9cf653579",
+        "type": "inject",
+        "z": "7fe8840fae250fc8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 1600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "37ad5beb6295e6b5",
+        "type": "debug",
+        "z": "7fe8840fae250fc8",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "206ce75b64fa56f7",
+        "type": "function",
+        "z": "7fe8840fae250fc8",
+        "name": "Voltage Readings 0x48",
+        "func": "// Constants for node configuration\nconst ADS_TYPE = \"ads1115\"; // Set to \"ads1015\" if needed\nconst BOARD_ADDRESS = \"0x48\"; // Update with the board address\nconst CONTEXT_NAME = `voltReadings_${BOARD_ADDRESS}`; // Unique context name\nconst INITIALIZED_FLAG = `initialized_${BOARD_ADDRESS}`; // Flag to track initialization\n\n// Fetch global constants\nconst constants = global.get(\"current_sensor_constants\");\n\n// Use constants\nconst NUM_READINGS = constants?.NUM_READINGS || 20;\n\n// Retrieve or initialize the rolling window for channel readings\nlet channelReadings = flow.get(CONTEXT_NAME) || {\n    \"channel_0\": [],\n    \"channel_1\": [],\n    \"channel_2\": [],\n    \"channel_3\": []\n};\n\n// Debugging: Inspect incoming payload\nconsole.log(\"Incoming Payload:\", msg.payload);\n\n// Safely extract data from the incoming message\nconst data = msg.payload?.[\"/dev/i2c-1\"]?.[ADS_TYPE]?.[BOARD_ADDRESS]?.[\"singleEnded\"];\nif (!data) {\n    console.error(`Data not found for ${BOARD_ADDRESS}. Payload might not have the expected structure.`);\n    return null; // Exit the function if data is missing\n}\n\n// Process each channel\nfor (let channel in data) {\n    const voltage = data[channel].Volts;\n\n    // Maintain a rolling window of NUM_READINGS\n    if (channelReadings[channel].length >= NUM_READINGS) {\n        channelReadings[channel].shift(); // Remove the oldest reading\n    }\n    channelReadings[channel].push(voltage);\n}\n\n// Store updated readings in flow context\nflow.set(CONTEXT_NAME, channelReadings);\n\n// Check if all channels have reached NUM_READINGS\nconst isInitialized = Object.values(channelReadings).every(arr => arr.length >= NUM_READINGS);\n\n// Check if the initialization message has already been sent\nconst alreadyInitialized = flow.get(INITIALIZED_FLAG) || false;\n\nif (isInitialized && !alreadyInitialized) {\n    // Log initialization status\n    console.log(`Voltage readings for ${BOARD_ADDRESS} initialized.`);\n\n    // Set the initialization flag\n    flow.set(INITIALIZED_FLAG, true);\n\n    // Send initialization message\n    return {\n        topic: \"initialization\",\n        payload: {\n            board: BOARD_ADDRESS,\n            status: \"initialized\",\n            readings: channelReadings\n        }\n    };\n}\n\n// Set the updated readings as the payload for normal operation\nmsg.payload = { board: BOARD_ADDRESS, readings: channelReadings };\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 1540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "60dd101877394886",
+        "type": "debug",
+        "z": "7fe8840fae250fc8",
+        "name": "debug 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "global.get(\"collectors\")",
+        "targetType": "jsonata",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "f0d81d210d8f347e",
+        "type": "mcp pcf in",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Hose Button",
+        "chip": "b9050601429adda4",
+        "bitNum": "0",
+        "invert": true,
+        "pullUp": true,
+        "debounce": 20,
+        "onMsg": true,
+        "offMsg": false,
+        "diagnostics": false,
+        "x": 230,
+        "y": 1160,
+        "wires": [
+            [
+                "23d81b8dd2480914"
+            ]
+        ]
+    },
+    {
+        "id": "23d81b8dd2480914",
+        "type": "function",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Hose Manager",
+        "func": "const toolName = \"hose\";\n\n// Initialize the global state if it doesn't exist\nconst toolStateKey = `tool_state_${toolName}`;\nif (typeof global.get(toolStateKey) === \"undefined\") {\n    global.set(toolStateKey, false);\n}\n\n// Toggle the state\nlet currentState = global.get(toolStateKey);\nlet newState = !currentState;\n\n// Update the global state\nglobal.set(toolStateKey, newState);\n\n// Output the standardized message\nmsg.payload = {\n    topic: toolName,\n    state: newState\n};\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 1200,
+        "wires": [
+            [
+                "068af34fba9d19a1",
+                "466555d250389147"
+            ]
+        ]
+    },
+    {
+        "id": "cdc29a92a95ab2b6",
+        "type": "ui_button",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Hose GUI Button",
+        "group": "c4312b06d2d526ce",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Hose",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 250,
+        "y": 1200,
+        "wires": [
+            [
+                "23d81b8dd2480914"
+            ]
+        ]
+    },
+    {
+        "id": "068af34fba9d19a1",
+        "type": "debug",
+        "z": "46a8f0f085fb3f7f",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 960,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "af62b23139ab39a4",
+        "type": "inject",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Hose Injector",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 250,
+        "y": 1240,
+        "wires": [
+            [
+                "23d81b8dd2480914"
+            ]
+        ]
+    },
+    {
+        "id": "736a2bfe47a4f0aa",
+        "type": "inject",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Miter Saw Injector",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 270,
+        "y": 1680,
+        "wires": [
+            [
+                "2da6403f3956978f"
+            ]
+        ]
+    },
+    {
+        "id": "8d0b0680b99b485b",
+        "type": "mcp pcf in",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Miter Saw Button",
+        "chip": "b9050601429adda4",
+        "bitNum": "3",
+        "invert": true,
+        "pullUp": true,
+        "debounce": 20,
+        "onMsg": true,
+        "offMsg": false,
+        "diagnostics": false,
+        "x": 250,
+        "y": 1600,
+        "wires": [
+            [
+                "2da6403f3956978f"
+            ]
+        ]
+    },
+    {
+        "id": "a0399e264b15145c",
+        "type": "ui_button",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Miter Saw GUI Button",
+        "group": "c4312b06d2d526ce",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Miter Saw",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 260,
+        "y": 1640,
+        "wires": [
+            [
+                "2da6403f3956978f"
+            ]
+        ]
+    },
+    {
+        "id": "2da6403f3956978f",
+        "type": "function",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Miter Saw Manager",
+        "func": "const toolName = \"miter_saw\";\n\n// Initialize the global state if it doesn't exist\nconst toolStateKey = `tool_state_${toolName}`;\nif (typeof global.get(toolStateKey) === \"undefined\") {\n    global.set(toolStateKey, false);\n}\n\n// Toggle the state\nlet currentState = global.get(toolStateKey);\nlet newState = !currentState;\n\n// Update the global state\nglobal.set(toolStateKey, newState);\n\n// Output the standardized message\nmsg.payload = {\n    topic: toolName,\n    state: newState\n};\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 1640,
+        "wires": [
+            [
+                "068af34fba9d19a1",
+                "466555d250389147"
+            ]
+        ]
+    },
+    {
+        "id": "93268db748f4d972",
+        "type": "inject",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Router Table Injector",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 270,
+        "y": 1400,
+        "wires": [
+            [
+                "b52e9e6ced7128cb"
+            ]
+        ]
+    },
+    {
+        "id": "999e9b94c3dd81df",
+        "type": "mcp pcf in",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Router Table Button",
+        "chip": "b9050601429adda4",
+        "bitNum": "1",
+        "invert": true,
+        "pullUp": true,
+        "debounce": 20,
+        "onMsg": true,
+        "offMsg": false,
+        "diagnostics": false,
+        "x": 260,
+        "y": 1320,
+        "wires": [
+            [
+                "b52e9e6ced7128cb"
+            ]
+        ]
+    },
+    {
+        "id": "42c28c5f4e8a7f06",
+        "type": "ui_button",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Router Table GUI Button",
+        "group": "c4312b06d2d526ce",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Router Table",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 270,
+        "y": 1360,
+        "wires": [
+            [
+                "b52e9e6ced7128cb"
+            ]
+        ]
+    },
+    {
+        "id": "b52e9e6ced7128cb",
+        "type": "function",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Router Table Manager",
+        "func": "const toolName = \"router_table\";\n\n// Initialize the global state if it doesn't exist\nconst toolStateKey = `tool_state_${toolName}`;\nif (typeof global.get(toolStateKey) === \"undefined\") {\n    global.set(toolStateKey, false);\n}\n\n// Toggle the state\nlet currentState = global.get(toolStateKey);\nlet newState = !currentState;\n\n// Update the global state\nglobal.set(toolStateKey, newState);\n\n// Output the standardized message\nmsg.payload = {\n    topic: toolName,\n    state: newState\n};\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 1360,
+        "wires": [
+            [
+                "068af34fba9d19a1",
+                "466555d250389147"
+            ]
+        ]
+    },
+    {
+        "id": "7a8e92b3dddc171b",
+        "type": "inject",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Overhead Hose Injector",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 280,
+        "y": 1540,
+        "wires": [
+            [
+                "3802242ec83b74bc"
+            ]
+        ]
+    },
+    {
+        "id": "d6f5708d99ee1841",
+        "type": "mcp pcf in",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Overhead Hose Button",
+        "chip": "b9050601429adda4",
+        "bitNum": "2",
+        "invert": true,
+        "pullUp": true,
+        "debounce": 20,
+        "onMsg": true,
+        "offMsg": false,
+        "diagnostics": false,
+        "x": 260,
+        "y": 1460,
+        "wires": [
+            [
+                "3802242ec83b74bc"
+            ]
+        ]
+    },
+    {
+        "id": "e881cf9870b6dfa1",
+        "type": "ui_button",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Overhead Hose GUI Button",
+        "group": "c4312b06d2d526ce",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Overhead Hose",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 280,
+        "y": 1500,
+        "wires": [
+            [
+                "3802242ec83b74bc"
+            ]
+        ]
+    },
+    {
+        "id": "3802242ec83b74bc",
+        "type": "function",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Overhead Hose Manager",
+        "func": "const toolName = \"overhead_hose\";\n\n// Initialize the global state if it doesn't exist\nconst toolStateKey = `tool_state_${toolName}`;\nif (typeof global.get(toolStateKey) === \"undefined\") {\n    global.set(toolStateKey, false);\n}\n\n// Toggle the state\nlet currentState = global.get(toolStateKey);\nlet newState = !currentState;\n\n// Update the global state\nglobal.set(toolStateKey, newState);\n\n// Output the standardized message\nmsg.payload = {\n    topic: toolName,\n    state: newState\n};\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 1500,
+        "wires": [
+            [
+                "068af34fba9d19a1",
+                "466555d250389147"
+            ]
+        ]
+    },
+    {
+        "id": "466555d250389147",
+        "type": "function",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Shop Manager",
+        "func": "// Initialize tools if not already done\nif (!global.get(\"tools_initialized\")) {\n    let tools = global.get(\"tools\") || [];\n    tools.forEach(tool => {\n        tool.state = false; // Set all tools to 'off' initially\n    });\n    global.set(\"tools\", tools);\n    global.set(\"tools_initialized\", true);\n}\n\n// Access the current list of tools\nlet tools = global.get(\"tools\") || [];\nlet msgPayload = msg.payload;\n\n// Check if the incoming message updates a tool's state\nlet updatedTool = tools.find(tool => tool.id === msgPayload.topic);\nif (updatedTool) {\n    if (updatedTool.state !== msgPayload.state) {\n        updatedTool.state = msgPayload.state;\n        global.set(\"tools\", tools);\n    }\n}\n\n// Create the status text for all tools with line breaks\nlet statusText = tools\n    .map(tool => `${tool.state ? '🟩' : '⬜️'} ${tool.label}`)\n    .join('\\n');\n\n// Update the node's status with line breaks\nnode.status({ fill: \"blue\", shape: \"dot\", text: statusText });\n\nreturn { payload: tools };\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 1060,
+        "wires": [
+            [
+                "fcad0073165d6e16",
+                "520574e24207048d",
+                "1379209d7498349e",
+                "59b6a798ca93a7f6"
+            ]
+        ]
+    },
+    {
+        "id": "c82f55b454622154",
+        "type": "mcp pcf out",
+        "z": "46a8f0f085fb3f7f",
+        "name": "dust collector",
+        "chip": "b9050601429adda4",
+        "bitNum": "4",
+        "invert": false,
+        "legacy": false,
+        "x": 1980,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "95d521e6f46be276",
+        "type": "mcp pcf out",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Central Air Filter",
+        "chip": "b9050601429adda4",
+        "bitNum": "12",
+        "invert": false,
+        "legacy": false,
+        "x": 1980,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "d33a3a9a39783669",
+        "type": "switch",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Collector Router",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "main_collector",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "central_air_filter",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1660,
+        "y": 500,
+        "wires": [
+            [
+                "c82f55b454622154"
+            ],
+            [
+                "95d521e6f46be276"
+            ]
+        ]
+    },
+    {
+        "id": "bd8b398c0dc020e3",
+        "type": "PCA9685 out",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Everest Access 0",
+        "pca9685": "b8cfe0329ed84e2a",
+        "channel": "0",
+        "payload": "",
+        "unit": "microseconds",
+        "onStep": "0",
+        "x": 2010,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "86ff070a22ce02d9",
+        "type": "PCA9685 out",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Hose 1",
+        "pca9685": "b8cfe0329ed84e2a",
+        "channel": "1",
+        "payload": "",
+        "unit": "microseconds",
+        "onStep": "0",
+        "x": 1980,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "f27cde2a395d751f",
+        "type": "PCA9685 out",
+        "z": "46a8f0f085fb3f7f",
+        "name": "MiterSaw ",
+        "pca9685": "b8cfe0329ed84e2a",
+        "channel": "8",
+        "payload": "",
+        "unit": "microseconds",
+        "onStep": "0",
+        "x": 2020,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "4bfe013036bea6a3",
+        "type": "PCA9685 out",
+        "z": "46a8f0f085fb3f7f",
+        "name": "MiterSaw Left ",
+        "pca9685": "b8cfe0329ed84e2a",
+        "channel": "10",
+        "payload": "",
+        "unit": "microseconds",
+        "onStep": "0",
+        "x": 2040,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "93a119e7850a9e6f",
+        "type": "PCA9685 out",
+        "z": "46a8f0f085fb3f7f",
+        "name": "MiterSaw Right ",
+        "pca9685": "b8cfe0329ed84e2a",
+        "channel": "10",
+        "payload": "",
+        "unit": "microseconds",
+        "onStep": "0",
+        "x": 2040,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "3058fa0f4529d9ee",
+        "type": "PCA9685 out",
+        "z": "46a8f0f085fb3f7f",
+        "name": "FloorSweep",
+        "pca9685": "b8cfe0329ed84e2a",
+        "channel": "10",
+        "payload": "",
+        "unit": "microseconds",
+        "onStep": "0",
+        "x": 2030,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "c545f90fdcbdb66d",
+        "type": "PCA9685 out",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Corner Branch",
+        "pca9685": "b8cfe0329ed84e2a",
+        "channel": "2",
+        "payload": "",
+        "unit": "microseconds",
+        "onStep": "0",
+        "x": 2000,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "13f023f6f7a6383a",
+        "type": "PCA9685 out",
+        "z": "46a8f0f085fb3f7f",
+        "name": "BandSaw",
+        "pca9685": "b8cfe0329ed84e2a",
+        "channel": "12",
+        "payload": "",
+        "unit": "microseconds",
+        "onStep": "0",
+        "x": 2020,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "b2d94881c917fd0c",
+        "type": "PCA9685 out",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Drill Press",
+        "pca9685": "6ce45bce.cdff94",
+        "channel": "11",
+        "payload": "",
+        "unit": "microseconds",
+        "onStep": "0",
+        "x": 2020,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "3601133c01c5bfd8",
+        "type": "PCA9685 out",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Black Diamond",
+        "pca9685": "b8cfe0329ed84e2a",
+        "channel": "3",
+        "payload": "",
+        "unit": "microseconds",
+        "onStep": "0",
+        "x": 2000,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "498e40799e1d0e62",
+        "type": "PCA9685 out",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Island Branch Overhead Arm",
+        "pca9685": "0a8fbbe4b9c54f62",
+        "channel": "10",
+        "payload": "",
+        "unit": "microseconds",
+        "onStep": "0",
+        "x": 2080,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "6d1122942a633635",
+        "type": "PCA9685 out",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Table Saw Hood",
+        "pca9685": "0a8fbbe4b9c54f62",
+        "channel": "9",
+        "payload": "",
+        "unit": "microseconds",
+        "onStep": "0",
+        "x": 2040,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "06e46a1f992a6e38",
+        "type": "PCA9685 out",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Table Saw Main",
+        "pca9685": "9fcdbe46726f4ab4",
+        "channel": "4",
+        "payload": "",
+        "unit": "microseconds",
+        "onStep": "0",
+        "x": 2040,
+        "y": 1700,
+        "wires": []
+    },
+    {
+        "id": "b67b1cb5a4955eae",
+        "type": "PCA9685 out",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Router Table",
+        "pca9685": "b8cfe0329ed84e2a",
+        "channel": "4",
+        "payload": "",
+        "unit": "microseconds",
+        "onStep": "0",
+        "x": 1990,
+        "y": 1740,
+        "wires": []
+    },
+    {
+        "id": "923a614c8dd979a7",
+        "type": "PCA9685 out",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Sanding Table",
+        "pca9685": "9fcdbe46726f4ab4",
+        "channel": "3",
+        "payload": "",
+        "unit": "microseconds",
+        "onStep": "0",
+        "x": 2040,
+        "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "1694480d053dcddc",
+        "type": "PCA9685 out",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Planer",
+        "pca9685": "9fcdbe46726f4ab4",
+        "channel": "0",
+        "payload": "",
+        "unit": "microseconds",
+        "onStep": "0",
+        "x": 2010,
+        "y": 1820,
+        "wires": []
+    },
+    {
+        "id": "fcad0073165d6e16",
+        "type": "function",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Gate Manager",
+        "func": "// Get the global list of gates and tools\nlet gates = global.get(\"gates\") || [];\nlet tools = msg.payload || [];\n\n// Create a temporary list for gates that need to be opened\nlet tempGateList = [];\n\n// Process the list of tools and collect gate preferences for tools that are \"on\"\ntools.forEach(tool => {\n    if (tool.state) {\n        (tool.preferences.gate_prefs || []).forEach(gateId => {\n            if (!tempGateList.includes(gateId)) {\n                tempGateList.push(gateId);\n            }\n        });\n    }\n});\n\n// Loop through all gates and send open/close messages\ngates.forEach(gate => {\n    let value = tempGateList.includes(gate.id) ? gate.range.open : gate.range.close;\n    node.send({\n        topic: gate.id,\n        payload: value\n    });\n});\n\n// Wait for 1 second, then send 0 to all gates to stop the servos\nsetTimeout(() => {\n    gates.forEach(gate => {\n        node.send({\n            topic: gate.id,\n            payload: 0\n        });\n    });\n}, 1000);\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1200,
+        "y": 1340,
+        "wires": [
+            [
+                "e4e9c3c8edeec332"
+            ]
+        ]
+    },
+    {
+        "id": "d62f1647d7edc098",
+        "type": "mcp pcf out",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Bench Light",
+        "chip": "b9050601429adda4",
+        "bitNum": "7",
+        "invert": false,
+        "legacy": false,
+        "x": 1970,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "8d76d182bf79daba",
+        "type": "PCA9685 out",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Hose Button Red",
+        "pca9685": "b8cfe0329ed84e2a",
+        "channel": "13",
+        "payload": "",
+        "unit": "percent",
+        "onStep": "0",
+        "x": 1990,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "5e496bdd88490b01",
+        "type": "PCA9685 out",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Hose Button Green",
+        "pca9685": "b8cfe0329ed84e2a",
+        "channel": "14",
+        "payload": "",
+        "unit": "percent",
+        "onStep": "0",
+        "x": 1990,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "e78ff691b8e298c7",
+        "type": "PCA9685 out",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Hose Button Blue",
+        "pca9685": "b8cfe0329ed84e2a",
+        "channel": "15",
+        "payload": "",
+        "unit": "percent",
+        "onStep": "0",
+        "x": 1990,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "30c87a437c770229",
+        "type": "debug",
+        "z": "46a8f0f085fb3f7f",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1840,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "520574e24207048d",
+        "type": "debug",
+        "z": "46a8f0f085fb3f7f",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1200,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "e4e9c3c8edeec332",
+        "type": "switch",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Gate Switcher",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "everest_access",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "hose",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "miter_saw",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "miter_saw_left",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "miter_saw_right",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "floor_sweep",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "corner_branch",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "band_saw",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "drill_press",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "black_diamond",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "island_branch_overhead_arm",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "table_saw_hood",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "table_saw_main",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "router_table",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "sanding_table",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "planer",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 16,
+        "x": 1520,
+        "y": 1440,
+        "wires": [
+            [
+                "bd8b398c0dc020e3",
+                "30c87a437c770229"
+            ],
+            [
+                "86ff070a22ce02d9",
+                "30c87a437c770229"
+            ],
+            [
+                "f27cde2a395d751f"
+            ],
+            [
+                "4bfe013036bea6a3"
+            ],
+            [
+                "93a119e7850a9e6f"
+            ],
+            [
+                "3058fa0f4529d9ee"
+            ],
+            [
+                "c545f90fdcbdb66d",
+                "30c87a437c770229"
+            ],
+            [
+                "13f023f6f7a6383a"
+            ],
+            [
+                "b2d94881c917fd0c"
+            ],
+            [
+                "3601133c01c5bfd8",
+                "30c87a437c770229"
+            ],
+            [
+                "498e40799e1d0e62"
+            ],
+            [
+                "6d1122942a633635"
+            ],
+            [
+                "06e46a1f992a6e38"
+            ],
+            [
+                "b67b1cb5a4955eae",
+                "30c87a437c770229"
+            ],
+            [
+                "923a614c8dd979a7"
+            ],
+            [
+                "1694480d053dcddc"
+            ]
+        ]
+    },
+    {
+        "id": "74bc21a6c0555112",
+        "type": "inject",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Reset all tools",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "reset_tools",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 230,
+        "y": 420,
+        "wires": [
+            [
+                "c42d0563cca3b005"
+            ]
+        ]
+    },
+    {
+        "id": "5956c38966e708f0",
+        "type": "ui_button",
+        "z": "46a8f0f085fb3f7f",
+        "name": "RESET ALL TOOLS",
+        "group": "c4312b06d2d526ce",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "\"reset_tools\"",
+        "payloadType": "str",
+        "topic": "reset_tools",
+        "topicType": "msg",
+        "x": 230,
+        "y": 460,
+        "wires": [
+            [
+                "c42d0563cca3b005"
+            ]
+        ]
+    },
+    {
+        "id": "c42d0563cca3b005",
+        "type": "function",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Reset Tools Function",
+        "func": "// Check if the message is a reset command\nif (msg.topic === \"reset_tools\" && msg.payload === \"reset_tools\") {\n    // Reset the tools_initialized flag\n    global.set(\"tools_initialized\", false);\n\n    // Reinitialize the tools\n    let tools = global.get(\"tools\") || [];\n    let outputMessages = []; // Prepare output messages for Shop Manager\n\n    tools.forEach(tool => {\n        tool.state = false; // Set all tools to 'off' initially\n\n        // Add a message to turn off the tool\n        outputMessages.push({\n            topic: tool.id,\n            payload: false\n        });\n    });\n\n    // Update the global tools state\n    global.set(\"tools\", tools);\n    global.set(\"tools_initialized\", true); // Mark tools as initialized again\n\n    // Return messages to Shop Manager\n    return [outputMessages];\n}\n\n// Normal initialization logic\nif (!global.get(\"tools_initialized\")) {\n    let tools = global.get(\"tools\") || [];\n    tools.forEach(tool => {\n        tool.state = false; // Set all tools to 'off' initially\n    });\n    global.set(\"tools\", tools);\n    global.set(\"tools_initialized\", true); // Mark tools as initialized\n}\n\n// Return the current state of tools for debug or confirmation\nreturn { payload: global.get(\"tools\") };\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 440,
+        "wires": [
+            [
+                "d688358ff4188968"
+            ]
+        ]
+    },
+    {
+        "id": "d688358ff4188968",
+        "type": "debug",
+        "z": "46a8f0f085fb3f7f",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "2576df75c8c1c720",
+        "type": "debug",
+        "z": "46a8f0f085fb3f7f",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1440,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "1379209d7498349e",
+        "type": "function",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Collector Manager",
+        "func": "// Get the collector data\nlet collectors = global.get(\"collectors\") || [];\n\n// Initialize or retrieve collector state\nlet collectorState = flow.get(\"collectorState\") || {};\n\n// Get tools from the Shop Manager\nlet tools = msg.payload || [];\n\n// Track active tools per collector\nlet activeCollectors = {};\n\n// Process tools to determine which collectors are needed\ntools.forEach(tool => {\n    if (tool.state) { // If the tool is on\n        (tool.preferences.collector_prefs || []).forEach(pref => {\n            if (!activeCollectors[pref.name]) {\n                activeCollectors[pref.name] = { spin_down_time: pref.spin_down_time };\n            } else {\n                // Update spin_down_time to the longer value\n                activeCollectors[pref.name].spin_down_time = Math.max(\n                    activeCollectors[pref.name].spin_down_time,\n                    pref.spin_down_time\n                );\n            }\n        });\n    }\n});\n\n// Process each collector\ncollectors.forEach(collector => {\n    let collectorId = collector.id;\n\n    // Initialize collector state if not already present\n    if (!collectorState[collectorId]) {\n        collectorState[collectorId] = {\n            active: false,\n            spinDownTimer: null\n        };\n    }\n\n    let state = collectorState[collectorId];\n\n    if (activeCollectors[collectorId]) {\n        // Collector is needed\n        if (!state.active) {\n            state.active = true;\n            // Turn on the collector\n            node.send({ topic: collectorId, payload: true });\n        }\n\n        // Update spin_down_time in memory\n        state.spin_down_time = activeCollectors[collectorId].spin_down_time;\n\n        // Cancel any existing spin down timer\n        if (state.spinDownTimer) {\n            clearTimeout(state.spinDownTimer);\n            state.spinDownTimer = null;\n        }\n    } else {\n        // Collector is not needed, check if it should be turned off\n        if (state.active && !state.spinDownTimer) {\n            state.spinDownTimer = setTimeout(() => {\n                state.active = false;\n                state.spinDownTimer = null;\n                // Turn off the collector\n                node.send({ topic: collectorId, payload: false });\n            }, state.spin_down_time * 1000);\n        }\n    }\n});\n\n// Save the updated collector state\nflow.set(\"collectorState\", collectorState);\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1250,
+        "y": 500,
+        "wires": [
+            [
+                "d33a3a9a39783669",
+                "c6f782e99baab51f"
+            ]
+        ]
+    },
+    {
+        "id": "c6f782e99baab51f",
+        "type": "debug",
+        "z": "46a8f0f085fb3f7f",
+        "name": "debug 13",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1480,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "07be38ad24779be0",
+        "type": "function",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Gates Config",
+        "func": "let gates = [\n  {\n    \"id\": \"everest_access\",\n    \"label\": \"Everest Access\",\n    \"type\": \"servo_gate\",\n    \"location\": \"By the Pi\",\n    \"address\": {\n      \"board\": \"master_pca9685_0x41\",\n      \"channel\": 0\n    },\n    \"range\": {\n      \"close\": 1300,\n      \"open\": 2100\n    }\n  },\n  {\n    \"id\": \"hose\",\n    \"label\": \"HOSE\",\n    \"type\": \"servo_gate\",\n    \"location\": \"By the Pi\",\n    \"address\": {\n      \"board\": \"master_pca9685_0x41\",\n      \"channel\": 1\n    },\n    \"range\": {\n      \"close\": 1213,\n      \"open\": 1747\n    }\n  },\n  {\n    \"id\": \"miter_saw\",\n    \"label\": \"Miter Saw\",\n    \"type\": \"servo_gate\",\n    \"location\": \"Below the miter saw\",\n    \"address\": {\n      \"board\": \"master_pca9685_0x41\",\n      \"channel\": 2\n    },\n    \"range\": {\n      \"close\": 1173,\n      \"open\": 1833\n    }\n  },\n  {\n    \"id\": \"miter_saw_left\",\n    \"label\": \"Miter Saw Left\",\n    \"type\": \"servo_gate\",\n    \"location\": \"Below the miter saw to the left\",\n    \"address\": {\n      \"board\": \"master_pca9685_0x41\",\n      \"channel\": 3\n    },\n    \"range\": {\n      \"close\": 1967,\n      \"open\": 1167\n    }\n  },\n  {\n    \"id\": \"miter_saw_right\",\n    \"label\": \"Miter Saw Right\",\n    \"type\": \"servo_gate\",\n    \"location\": \"Below the miter saw to the left\",\n    \"address\": {\n      \"board\": \"master_pca9685_0x41\",\n      \"channel\": 4\n    },\n    \"range\": {\n      \"close\": 933,\n      \"open\": 1900\n    }\n  },\n  {\n    \"id\": \"floor_sweep\",\n    \"label\": \"Floor Sweep\",\n    \"type\": \"servo_gate\",\n    \"location\": \"Corner back by the collector\",\n    \"address\": {\n      \"board\": \"master_pca9685_0x41\",\n      \"channel\": 6\n    },\n    \"range\": {\n      \"close\": 1300,\n      \"open\": 1967\n    }\n  },\n  {\n    \"id\": \"corner_branch\",\n    \"label\": \"Corner Branch\",\n    \"type\": \"servo_gate\",\n    \"location\": \"Corner Branch\",\n    \"address\": {\n      \"board\": \"master_pca9685_0x41\",\n      \"channel\": 7\n    },\n    \"range\": {\n      \"close\": 1200,\n      \"open\": 1833\n    }\n  },\n  {\n    \"id\": \"band_saw\",\n    \"label\": \"Band Saw\",\n    \"type\": \"servo_gate\",\n    \"location\": \"Below the BandSaw directly after the corner branch split\",\n    \"address\": {\n      \"board\": \"master_pca9685_0x41\",\n      \"channel\": 5\n    },\n    \"range\": {\n      \"close\": 1153,\n      \"open\": 1700\n    }\n  },\n  {\n    \"id\": \"drill_press\",\n    \"label\": \"Drill Press\",\n    \"type\": \"servo_gate\",\n    \"location\": \"Behind the drill press\",\n    \"address\": {\n      \"board\": \"master_pca9685_0x41\",\n      \"channel\": 8\n    },\n    \"range\": {\n      \"close\": 1300,\n      \"open\": 1900\n    }\n  },\n  {\n    \"id\": \"black_diamond\",\n    \"label\": \"Black Diamond\",\n    \"type\": \"servo_gate\",\n    \"location\": \"Flexi pipe dropping out of the everest connection\",\n    \"address\": {\n      \"board\": \"everest_pca9685_0x50\",\n      \"channel\": 0\n    },\n    \"range\": {\n      \"close\": 1007,\n      \"open\": 1833\n    }\n  },\n  {\n    \"id\": \"island_branch_overhead_arm\",\n    \"label\": \"Island Branch Overhead Arm\",\n    \"type\": \"servo_gate\",\n    \"location\": \"Island Branch overhead articulating arm\",\n    \"address\": {\n      \"board\": \"everest_pca9685_0x50\",\n      \"channel\": 1\n    },\n    \"range\": {\n      \"close\": 993,\n      \"open\": 1900\n    }\n  },\n  {\n    \"id\": \"table_saw_hood\",\n    \"label\": \"Table Saw Hood\",\n    \"type\": \"servo_gate\",\n    \"location\": \"Table Saw Hood\",\n    \"address\": {\n      \"board\": \"everest_pca9685_0x50\",\n      \"channel\": 2\n    },\n    \"range\": {\n      \"close\": 1367,\n      \"open\": 1813\n    }\n  },\n  {\n    \"id\": \"table_saw_main\",\n    \"label\": \"Table Saw Main\",\n    \"type\": \"servo_gate\",\n    \"location\": \"Behind the table saw\",\n    \"address\": {\n      \"board\": \"island_pca9685_0x72\",\n      \"channel\": 1\n    },\n    \"range\": {\n      \"close\": 973,\n      \"open\": 1833\n    }\n  },\n  {\n    \"id\": \"router_table\",\n    \"label\": \"Router Table\",\n    \"type\": \"servo_gate\",\n    \"location\": \"Attached to rear of table saw\",\n    \"address\": {\n      \"board\": \"island_pca9685_0x72\",\n      \"channel\": 2\n    },\n    \"range\": {\n      \"close\": 1000,\n      \"open\": 1833\n    }\n  },\n  {\n    \"id\": \"sanding_table\",\n    \"label\": \"Sanding Table\",\n    \"type\": \"servo_gate\",\n    \"location\": \"Sanding Table\",\n    \"address\": {\n      \"board\": \"island_pca9685_0x72\",\n      \"channel\": 3\n    },\n    \"range\": {\n      \"close\": 1367,\n      \"open\": 1700\n    }\n  },\n  {\n    \"id\": \"planer\",\n    \"label\": \"Planer\",\n    \"type\": \"servo_gate\",\n    \"location\": \"Attached to rear of table saw, first.\",\n    \"address\": {\n      \"board\": \"island_pca9685_0x72\",\n      \"channel\": 0\n    },\n    \"range\": {\n      \"close\": 1267,\n      \"open\": 1833\n    }\n  }\n];\nglobal.set(\"gates\", gates);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fed64018330568de",
+        "type": "function",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Button Config",
+        "func": "let buttons = [\n  {\n    \"label\": \"Hose Button\",\n    \"type\": \"button\",\n    \"id\": \"hose_button\",\n    \"location\": \"By the Hose\",\n    \"address\": {\n      \"chip\": \"MCP23017 @ 1:20H\",\n      \"pin\": 0\n    },\n    \"preferences\": {\n      \"collector_prefs\": [\n        {\n          \"name\": \"main_collector\",\n          \"spin_down_time\": 0\n        }\n      ],\n      \"gate_prefs\": [\"HOSE\", \"Corner_Branch\"],\n      \"light_prefs\": [\"hose_button_LED\"]\n    }\n  },\n  {\n    \"label\": \"Router Table Button\",\n    \"type\": \"button\",\n    \"id\": \"router_table_button\",\n    \"location\": \"By the pi, old right miter saw button\",\n    \"address\": {\n      \"chip\": \"MCP23017 @ 1:24H\",\n      \"pin\": 2\n    },\n    \"preferences\": {\n      \"collector_prefs\": [\n        {\n          \"name\": \"main_collector\",\n          \"spin_down_time\": 0\n        },\n        {\n          \"name\": \"central_air_filter\",\n          \"spin_down_time\": 0\n        }\n      ],\n      \"gate_prefs\": [\"Router_Table\", \"Black_Diamond\", \"Everest_Access\"],\n      \"light_prefs\": [\"router_table_button_LED\"]\n    }\n  },\n  {\n    \"label\": \"Overhead Hose Button\",\n    \"type\": \"button\",\n    \"id\": \"overhead_hose_button\",\n    \"location\": \"By the pi\",\n    \"address\": {\n      \"chip\": \"MCP23017 @ 1:20H\",\n      \"pin\": 1\n    },\n    \"preferences\": {\n      \"collector_prefs\": [\n        {\n          \"name\": \"main_collector\",\n          \"spin_down_time\": 0\n        },\n        {\n          \"name\": \"central_air_filter\",\n          \"spin_down_time\": 0\n        }\n      ],\n      \"gate_prefs\": [\"Everest_Access\", \"Island_Branch_Overhead_Arm\"],\n      \"light_prefs\": [\"overhead_hose_button_LED\"]\n    }\n  },\n  {\n    \"label\": \"Miter Saw Left Button\",\n    \"type\": \"button\",\n    \"id\": \"miter_saw_left_button\",\n    \"location\": \"By the Miter Saw\",\n    \"address\": {\n      \"chip\": \"MCP23017 @ 1:20H\",\n      \"pin\": 3\n    },\n    \"preferences\": {\n      \"collector_prefs\": [],\n      \"gate_prefs\": [\"MiterSaw_Left\"],\n      \"light_prefs\": [\"miter_saw_left_button_LED\"]\n    }\n  },\n  {\n    \"label\": \"Miter Saw Right Button\",\n    \"type\": \"button\",\n    \"id\": \"miter_saw_right_button\",\n    \"location\": \"By the Miter Saw\",\n    \"address\": {\n      \"chip\": \"MCP23017 @ 1:20H\",\n      \"pin\": 4\n    },\n    \"preferences\": {\n      \"collector_prefs\": [],\n      \"gate_prefs\": [\"MiterSaw_Right\"],\n      \"light_prefs\": [\"miter_saw_right_button_LED\"]\n    }\n  }\n];\n\nglobal.set(\"buttons\", buttons);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f1a5f99cd8fdaf1c",
+        "type": "inject",
+        "z": "46a8f0f085fb3f7f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 160,
+        "wires": [
+            [
+                "07be38ad24779be0"
+            ]
+        ]
+    },
+    {
+        "id": "d592c5482e327bee",
+        "type": "inject",
+        "z": "46a8f0f085fb3f7f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 200,
+        "wires": [
+            [
+                "fed64018330568de"
+            ]
+        ]
+    },
+    {
+        "id": "3fe4c70fab2017a1",
+        "type": "inject",
+        "z": "46a8f0f085fb3f7f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1080,
+        "y": 200,
+        "wires": [
+            [
+                "057c84a7eaf3fc1b"
+            ]
+        ]
+    },
+    {
+        "id": "057c84a7eaf3fc1b",
+        "type": "function",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Print Button States",
+        "func": "let buttonStates = context.flow.get('buttonStates') || {};\nnode.warn(buttonStates);\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1250,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "969b1c78a8ea2be6",
+        "type": "function",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Collectors Config",
+        "func": "let collectors = [\n  {\n    \"label\": \"Main Collector\",\n    \"type\": \"collector\",\n    \"id\": \"main_collector\",\n    \"location\": \"By the collector\",\n    \"address\": {\n      \"chip\": \"MCP23017 @ 1:20H\",\n      \"pin\": 5\n    },\n    \"preferences\": {\n      \"minimum_up_time\": 10\n    },\n    \"state\": \"off\",\n    \"queue\": []\n  },\n  {\n    \"label\": \"Central Air Filter\",\n    \"type\": \"collector\",\n    \"id\": \"central_air_filter\",\n    \"location\": \"Over the bench\",\n    \"address\": {\n      \"chip\": \"MCP23017 @ 1:24H\",\n      \"pin\": 5\n    },\n    \"preferences\": {\n      \"minimum_up_time\": 0\n    },\n    \"state\": \"off\",\n    \"queue\": []\n  }\n];\n\nglobal.set(\"collectors\", collectors);\nreturn { payload: \"Collectors initialized\" };\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "441ca5a9a842bd5d",
+        "type": "inject",
+        "z": "46a8f0f085fb3f7f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 360,
+        "wires": [
+            [
+                "969b1c78a8ea2be6"
+            ]
+        ]
+    },
+    {
+        "id": "1d87657eba5bed3d",
+        "type": "inject",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Update All",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 40,
+        "wires": [
+            [
+                "07be38ad24779be0",
+                "fed64018330568de",
+                "969b1c78a8ea2be6",
+                "bc65538bd6a8461f",
+                "464feb1c4314a47c",
+                "db211528376e8ab9",
+                "013874726f2e5875",
+                "1189575255e21f7a"
+            ]
+        ]
+    },
+    {
+        "id": "464feb1c4314a47c",
+        "type": "function",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Current Sensor Config",
+        "func": "let current_sensors = [\n    {\n        \"label\": \"Miter Saw Current Sensor\",\n        \"type\": \"current_sensor\",\n        \"id\": \"miter_saw_current_sensor\",\n        \"location\": \"By the Miter Saw\",\n        \"address\": {\n            \"board\": \"ADS1115 on I2C-1, Addr 0x48\",\n            \"channel\": \"channel_0\"\n        },\n        \"preferences\": {\n            \"threshold\": 0.03,\n            \"collector_prefs\": [\n                { \"name\": \"main_collector\", \"spin_down_time\": 10 },\n                { \"name\": \"central_air_filter\", \"spin_down_time\": 0 }\n            ],\n            \"gate_prefs\": [\"MiterSaw\", \"MiterSaw_Right\"],\n            \"light_prefs\": []\n        }\n    },\n    {\n        \"label\": \"Band Saw Current Sensor\",\n        \"type\": \"current_sensor\",\n        \"id\": \"band_saw_current_sensor\",\n        \"location\": \"By the Band Saw\",\n        \"address\": {\n            \"board\": \"ADS1115 on I2C-1, Addr 0x48\",\n            \"channel\": \"channel_3\"\n        },\n        \"preferences\": {\n            \"threshold\": 0.031,\n            \"collector_prefs\": [\n                { \"name\": \"main_collector\", \"spin_down_time\": 10 },\n                { \"name\": \"central_air_filter\", \"spin_down_time\": 0 }\n            ],\n            \"gate_prefs\": [\"BandSaw\", \"Corner_Branch\"],\n            \"light_prefs\": []\n        }\n    },\n    {\n        \"label\": \"Table Saw Current Sensor\",\n        \"type\": \"current_sensor\",\n        \"id\": \"table_saw_current_sensor\",\n        \"location\": \"By the Table Saw\",\n        \"address\": {\n            \"board\": \"ADS1115 on I2C-1, Addr 0x4a\",\n            \"channel\": \"channel_0\"\n        },\n        \"preferences\": {\n            \"threshold\": 0.0300,\n            \"collector_prefs\": [\n                { \"name\": \"main_collector\", \"spin_down_time\": 10 },\n                { \"name\": \"central_air_filter\", \"spin_down_time\": 0 }\n            ],\n            \"gate_prefs\": [\"Table_Saw_Main\", \"Black_Diamond\", \"Everest_Access\"]\n        }\n    },\n    {\n        \"label\": \"Router Table Current Sensor\",\n        \"type\": \"current_sensor\",\n        \"id\": \"router_table_current_sensor\",\n        \"location\": \"By the Table Saw\",\n        \"address\": {\n            \"board\": \"ADS1115 on I2C-1, Addr 0x4a\",\n            \"channel\": \"channel_2\"\n        },\n        \"preferences\": {\n            \"threshold\": 0.030,\n            \"collector_prefs\": [\n                { \"name\": \"main_collector\", \"spin_down_time\": 10 },\n                { \"name\": \"central_air_filter\", \"spin_down_time\": 0 }\n            ],\n            \"gate_prefs\": [\"Router_Table\", \"Black_Diamond\", \"Everest_Access\"]\n        }\n    },\n    {\n        \"label\": \"Planer Current Sensor\",\n        \"type\": \"current_sensor\",\n        \"id\": \"planer_current_sensor\",\n        \"location\": \"By the Table Saw\",\n        \"address\": {\n            \"board\": \"ADS1115 on I2C-1, Addr 0x4a\",\n            \"channel\": \"channel_1\"\n        },\n        \"preferences\": {\n            \"threshold\": 0.03,\n            \"collector_prefs\": [\n                { \"name\": \"main_collector\", \"spin_down_time\": 10 },\n                { \"name\": \"central_air_filter\", \"spin_down_time\": 0 }\n            ],\n            \"gate_prefs\": [\"Planer\", \"Black_Diamond\", \"Everest_Access\"]\n        }\n    }\n];\n\n// Global constants stored as an object\nlet current_sensor_constants = {\n    \"NUM_READINGS\": 20, // Number of readings to start and average\n    \"TRIM\": 10,         // Percent of readings from top and bottom to trim before averaging\n    \"MEMORY_SIZE\": 10,  // Number of readings to keep in memory (rolling window)\n    \"NUM_TRIGGERS\": 3,  // Number of readings over or under the thresholds needed to turn tool on\n    \"ERROR_THRESHOLD\": 100 // Number of null readings to trigger \"off\" state\n};\n\n// Set global variables\nglobal.set(\"current_sensors\", current_sensors);\nglobal.set(\"current_sensor_constants\", current_sensor_constants);\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bc65538bd6a8461f",
+        "type": "function",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Boards Config",
+        "func": "let boards = [\n    {\n        \"label\": \"GPIO Expander - Master Control\",\n        \"type\": \"MCP23017\",\n        \"id\": \"master_control_gpio_expander\",\n        \"location\": \"Master Control\",\n        \"i2c_address\": {\"hex\": \"0x20\", \"dec\": 32},\n        \"chip\": \"MCP23017 @ 1:20H\",\n        \"purpose\": \"Button Management\"\n    },\n    {\n        \"label\": \"PWM Servo - Master Control\",\n        \"type\": \"PCA9685\",\n        \"id\": \"master_control_pwm_servo\",\n        \"location\": \"Master Control\",\n        \"i2c_address\": {\"hex\": \"0x41\", \"dec\": 65},\n        \"chip\": \"PCA9685 on I2C-1, Addr 65\",\n        \"purpose\": \"Servo Control\",\n        \"frequency\": 50\n    },\n    {\n        \"label\": \"PWM LED - Master Control\",\n        \"type\": \"PCA9685\",\n        \"id\": \"master_control_pwm_led\",\n        \"location\": \"Master Control\",\n        \"i2c_address\": {\"hex\": \"0x40\", \"dec\": 64},\n        \"chip\": \"PCA9685 on I2C-1, Addr 64\",\n        \"purpose\": \"LED Control\",\n        \"frequency\": 1000\n    },\n    {\n        \"label\": \"AD Converter - Master Control\",\n        \"type\": \"ADS1115\",\n        \"id\": \"master_control_ad_converter\",\n        \"location\": \"Master Control\",\n        \"i2c_address\": {\"hex\": \"0x48\", \"dec\": 72},\n        \"chip\": \"ADS1115 on I2C-1, Addr 0x48\",\n        \"purpose\": \"Voltage Sensing\"\n    },\n    {\n        \"label\": \"GPIO Expander - Island\",\n        \"type\": \"MCP23017\",\n        \"id\": \"island_gpio_expander\",\n        \"location\": \"Center Island\",\n        \"i2c_address\": {\"hex\": \"0x24\", \"dec\": 36},\n        \"chip\": \"MCP23017 @ 1:24H\",\n        \"purpose\": \"Button Management\"\n    },\n    {\n        \"label\": \"PWM Servo - Island\",\n        \"type\": \"PCA9685\",\n        \"id\": \"island_pwm_servo\",\n        \"location\": \"Center Island\",\n        \"i2c_address\": {\"hex\": \"0x50\", \"dec\": 80},\n        \"chip\": \"PCA9685 on I2C-1, Addr 80\",\n        \"purpose\": \"Servo Control\",\n        \"frequency\": 50\n    },\n    {\n        \"label\": \"PWM LED - Island\",\n        \"type\": \"PCA9685\",\n        \"id\": \"island_pwm_led\",\n        \"location\": \"Center Island\",\n        \"i2c_address\": {\"hex\": \"0x4c\", \"dec\": 76},\n        \"chip\": \"PCA9685 on I2C-1, Addr 76\",\n        \"purpose\": \"LED Control\",\n        \"frequency\": 1000\n    },\n    {\n        \"label\": \"AD Converter - Island\",\n        \"type\": \"ADS1115\",\n        \"id\": \"island_ad_converter\",\n        \"location\": \"Center Island\",\n        \"i2c_address\": {\"hex\": \"0x4a\", \"dec\": 74},\n        \"chip\": \"ADS1115 on I2C-1, Addr 0x4a\",\n        \"purpose\": \"Voltage Sensing\"\n    },\n    {\n        \"label\": \"PWM Servo - Everest\",\n        \"type\": \"PCA9685\",\n        \"id\": \"everest_pwm_servo\",\n        \"location\": \"Above the table saw\",\n        \"i2c_address\": {\"hex\": \"0x72\", \"dec\": 114},\n        \"chip\": \"PCA9685 on I2C-1, Addr 114\",\n        \"purpose\": \"Servo Control\",\n        \"frequency\": 50\n    },\n    {\n        \"label\": \"PWM LED - Everest\",\n        \"type\": \"PCA9685\",\n        \"id\": \"everest_pwm_led\",\n        \"location\": \"Above the table saw\",\n        \"i2c_address\": {\"hex\": \"0x74\", \"dec\": 116},\n        \"chip\": \"PCA9685 on I2C-1, Addr 116\",\n        \"purpose\": \"LED Control\",\n        \"frequency\": 1000\n    }\n];\nglobal.set(\"boards\", boards);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "013874726f2e5875",
+        "type": "function",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Light Styles Config",
+        "func": "let light_styles = [\n  {\n    \"label\": \"Button RGBLED\",\n    \"type\": \"pwm_rgbled_button\",\n    \"styles\": {\n      \"true\": {\n        \"style\": \"pulse\",\n        \"red\": 100,\n        \"green\": 0,\n        \"blue\": 100\n      },\n      \"false\": {\n        \"style\": \"solid\",\n        \"red\": 90,\n        \"green\": 90,\n        \"blue\": 20\n      }\n    }\n  },\n  {\n    \"label\": \"Button LED\",\n    \"type\": \"pwm_led_button\",\n    \"styles\": {\n      \"true\": {\n        \"style\": \"pulse\",\n        \"value\": 0\n      },\n      \"false\": {\n        \"style\": \"solid\",\n        \"value\": 60\n      }\n    }\n  },\n  {\n    \"label\": \"Light\",\n    \"type\": \"relay\",\n    \"styles\": {\n      \"true\": {\n        \"style\": \"solid\",\n        \"value\": 1\n      },\n      \"false\": {\n        \"style\": \"solid\",\n        \"value\": 0\n      }\n    }\n  }\n];\n\nglobal.set(\"light_styles\", light_styles);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "db211528376e8ab9",
+        "type": "function",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Lights Config",
+        "func": "let lights = [\n    {\n        \"label\": \"Hose Button LED\",\n        \"type\": \"pwm_rgbled_button\",\n        \"id\": \"hose_button_LED\",\n        \"location\": \"On the hose button\",\n        \"address\": {\n            \"chip\": \"PCA9685 on I2C-1, Addr 64\",\n            \"pins\": [0, 1, 2]\n        },\n        \"styles\": {\n            \"true\": {\n                \"style\": \"pulse\",\n                \"red\": 0,\n                \"green\": 100,\n                \"blue\": 0\n            },\n            \"false\": {\n                \"style\": \"solid\",\n                \"red\": 90,\n                \"green\": 20,\n                \"blue\": 90\n            }\n        }\n    },\n    {\n        \"label\": \"Overhead Hose Button LED\",\n        \"type\": \"pwm_rgbled_button\",\n        \"id\": \"overhead_hose_button_LED\",\n        \"location\": \"On the hose button\",\n        \"address\": {\n            \"chip\": \"PCA9685 on I2C-1, Addr 76\",\n            \"pins\": [3, 4, 5]\n        },\n        \"styles\": {}\n    },\n    {\n        \"label\": \"Router Table Button LED\",\n        \"type\": \"pwm_rgbled_button\",\n        \"id\": \"router_table_button\",\n        \"location\": \"On the right miter saw button\",\n        \"address\": {\n            \"chip\": \"PCA9685 on I2C-1, Addr 76\",\n            \"pins\": [6, 7, 8]\n        },\n        \"styles\": {}\n    },\n    {\n        \"label\": \"Miter Saw Left Button LED\",\n        \"type\": \"pwm_led_button\",\n        \"id\": \"miter_saw_left_button_LED\",\n        \"location\": \"On the miter saw left button\",\n        \"address\": {\n            \"chip\": \"PCA9685 on I2C-1, Addr 64\",\n            \"pin\": [9]\n        },\n        \"styles\": {}\n    },\n    {\n        \"label\": \"Miter Saw Right Button LED\",\n        \"type\": \"pwm_led_button\",\n        \"id\": \"miter_saw_right_button_LED\",\n        \"location\": \"On the miter saw right button\",\n        \"address\": {\n            \"chip\": \"PCA9685 on I2C-1, Addr 64\",\n            \"pin\": [10]\n        },\n        \"styles\": {}\n    },\n    {\n        \"label\": \"Bench Light\",\n        \"type\": \"relay\",\n        \"id\": \"bench\",\n        \"location\": \"On the miter saw button\",\n        \"address\": {\n            \"chip\": \"MCP23017 on I2C-1, Addr 20\",\n            \"pin\": 5\n        },\n        \"styles\": {}\n    }\n];\n\nglobal.set(\"lights\", lights);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f845b0a65c4c7406",
+        "type": "inject",
+        "z": "46a8f0f085fb3f7f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 240,
+        "wires": [
+            [
+                "464feb1c4314a47c"
+            ]
+        ]
+    },
+    {
+        "id": "0108bb546287ce29",
+        "type": "inject",
+        "z": "46a8f0f085fb3f7f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 280,
+        "wires": [
+            [
+                "db211528376e8ab9"
+            ]
+        ]
+    },
+    {
+        "id": "6cb952439cdeeb50",
+        "type": "inject",
+        "z": "46a8f0f085fb3f7f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 320,
+        "wires": [
+            [
+                "013874726f2e5875"
+            ]
+        ]
+    },
+    {
+        "id": "1189575255e21f7a",
+        "type": "function",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Tools Config",
+        "func": "let tools = [\n    {\n        \"label\": \"Hose\",\n        \"id\": \"hose\",\n        \"location\": \"By the Pi\",\n        \"preferences\": {\n            \"collector_prefs\": [\n                {\n                    \"name\": \"main_collector\",\n                    \"spin_down_time\": 0\n                }\n            ],\n            \"gate_prefs\": [\"hose\", \"corner_branch\"],\n            \"light_prefs\": [\"hose_button_LED\"]\n        }\n    },\n    {\n        \"label\": \"Router Table\",\n        \"id\": \"router_table\",\n        \"location\": \"On table saw\",\n        \"preferences\": {\n            \"collector_prefs\": [\n                {\n                    \"name\": \"main_collector\",\n                    \"spin_down_time\": 0\n                },\n                {\n                    \"name\": \"central_air_filter\",\n                    \"spin_down_time\": 600\n                }\n            ],\n            \"gate_prefs\": [\"router_table\", \"black_diamond\", \"everest_access\"],\n            \"light_prefs\": [\"router_table_button_LED\"]\n        }\n    },\n    {\n        \"label\": \"Overhead Hose\",\n        \"id\": \"overhead_hose\",\n        \"location\": \"By the pi\",\n        \"preferences\": {\n            \"collector_prefs\": [\n                {\n                    \"name\": \"main_collector\",\n                    \"spin_down_time\": 0\n                },\n                {\n                    \"name\": \"central_air_filter\",\n                    \"spin_down_time\": 600\n                }\n            ],\n            \"gate_prefs\": [\"everest_access\", \"island_branch_overhead_arm\"],\n            \"light_prefs\": [\"overhead_hose_button_LED\"]\n        }\n    },\n    {\n        \"label\": \"Miter Saw\",\n        \"id\": \"miter_saw\",\n        \"location\": \"By the Miter Saw\",\n        \"preferences\": {\n            \"collector_prefs\": [\n                {\n                    \"name\": \"main_collector\",\n                    \"spin_down_time\": 60\n                },\n                {\n                    \"name\": \"central_air_filter\",\n                    \"spin_down_time\": 600\n                }\n            ],\n            \"gate_prefs\": [\"miter_saw\", \"miter_saw_right\"],\n            \"light_prefs\": []\n        }\n    },\n    {\n        \"label\": \"Miter Saw Left\",\n        \"id\": \"miter_saw_left\",\n        \"location\": \"By the Miter Saw\",\n        \"preferences\": {\n            \"collector_prefs\": [],\n            \"gate_prefs\": [\"miter_saw_left\"],\n            \"light_prefs\": [\"miter_saw_left_button_LED\"]\n        }\n    },\n    {\n        \"label\": \"Miter Saw Right\",\n        \"id\": \"miter_saw_right\",\n        \"location\": \"By the Miter Saw\",\n        \"preferences\": {\n            \"collector_prefs\": [],\n            \"gate_prefs\": [\"miter_saw_right\"],\n            \"light_prefs\": [\"miter_saw_right_button_LED\"]\n        }\n    },\n    {\n        \"label\": \"Band Saw\",\n        \"id\": \"band_saw\",\n        \"location\": \"By the Band Saw\",\n        \"preferences\": {\n            \"collector_prefs\": [\n                {\n                    \"name\": \"main_collector\",\n                    \"spin_down_time\": 10\n                },\n                {\n                    \"name\": \"central_air_filter\",\n                    \"spin_down_time\": 300\n                }\n            ],\n            \"gate_prefs\": [\"band_saw\", \"corner_branch\"],\n            \"light_prefs\": []\n        }\n    },\n    {\n        \"label\": \"Table Saw\",\n        \"id\": \"table_saw\",\n        \"location\": \"By the Table Saw\",\n        \"preferences\": {\n            \"collector_prefs\": [\n                {\n                    \"name\": \"main_collector\",\n                    \"spin_down_time\": 10\n                },\n                {\n                    \"name\": \"central_air_filter\",\n                    \"spin_down_time\": 0\n                }\n            ],\n            \"gate_prefs\": [\"table_saw_main\", \"black_diamond\", \"everest_access\"],\n            \"light_prefs\": []\n        }\n    },\n    {\n        \"label\": \"Planer\",\n        \"id\": \"planer\",\n        \"location\": \"By the Table Saw\",\n        \"preferences\": {\n            \"collector_prefs\": [\n                {\n                    \"name\": \"main_collector\",\n                    \"spin_down_time\": 10\n                },\n                {\n                    \"name\": \"central_air_filter\",\n                    \"spin_down_time\": 600\n                }\n            ],\n            \"gate_prefs\": [\"planer\", \"black_diamond\", \"everest_access\"],\n            \"light_prefs\": []\n        }\n    },\n    {\n        \"label\": \"Bench Light\",\n        \"id\": \"bench_light\",\n        \"location\": \"Above the bench\",\n        \"preferences\": {\n            \"collector_prefs\": [],\n            \"gate_prefs\": [],\n            \"light_prefs\": [\"bench\"]\n        }\n    }\n];\n\nglobal.set(\"tools\", tools);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2a6f524acfb8ba07",
+        "type": "inject",
+        "z": "46a8f0f085fb3f7f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 120,
+        "wires": [
+            [
+                "bc65538bd6a8461f"
+            ]
+        ]
+    },
+    {
+        "id": "1eb3e5d3d147b371",
+        "type": "inject",
+        "z": "46a8f0f085fb3f7f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 80,
+        "wires": [
+            [
+                "1189575255e21f7a"
+            ]
+        ]
+    },
+    {
+        "id": "af9e2cfb0fe2cff7",
+        "type": "function",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Print Lights",
+        "func": "let lights = global.get(\"lights\") || [];\nlet light_styles = global.get(\"light_styles\") || [];\nnode.warn(lights);\nnode.warn(light_styles);\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1230,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ceb468d904459513",
+        "type": "inject",
+        "z": "46a8f0f085fb3f7f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1080,
+        "y": 280,
+        "wires": [
+            [
+                "af9e2cfb0fe2cff7"
+            ]
+        ]
+    },
+    {
+        "id": "6df33095b059efa1",
+        "type": "function",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Print Collectors",
+        "func": "let collectors = context.global.get('collectors') || {};\nnode.warn(collectors);\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "32fc6ee381f12ec3",
+        "type": "inject",
+        "z": "46a8f0f085fb3f7f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1080,
+        "y": 360,
+        "wires": [
+            [
+                "6df33095b059efa1"
+            ]
+        ]
+    },
+    {
+        "id": "fca60794c26c371f",
+        "type": "function",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Reset Collectors",
+        "func": "// Get the list of collectors\nlet collectors = global.get(\"collectors\") || [];\n\n// Get the current collector state\nlet collectorState = flow.get(\"collectorState\") || {};\n\n// Prepare output messages\nlet outputMessages = [];\n\n// Iterate through each collector to clear timers and prepare \"off\" messages\ncollectors.forEach(collector => {\n    let collectorId = collector.id;\n\n    // If there is a timer for this collector, clear it\n    if (collectorState[collectorId]?.spinDownTimeout) {\n        clearTimeout(collectorState[collectorId].spinDownTimeout);\n    }\n\n    // Add a message to turn off the collector\n    outputMessages.push({\n        topic: collectorId,\n        payload: false\n    });\n});\n\n// Clear the collectorState context\nflow.set(\"collectorState\", {});\n\n// Log a reset message for debugging\nnode.warn(\"All collectors reset, timers cleared, and collectors turned off.\");\n\n// Broadcast all \"off\" messages\nreturn [outputMessages];\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 560,
+        "wires": [
+            [
+                "d33a3a9a39783669"
+            ]
+        ]
+    },
+    {
+        "id": "e25735b2871a2daa",
+        "type": "inject",
+        "z": "46a8f0f085fb3f7f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 560,
+        "wires": [
+            [
+                "fca60794c26c371f"
+            ]
+        ]
+    },
+    {
+        "id": "56564cf472744d69",
+        "type": "inject",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Table Saw Injector",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 270,
+        "y": 1820,
+        "wires": [
+            [
+                "8d40fed2a2919cf0"
+            ]
+        ]
+    },
+    {
+        "id": "7e12db062f9a84f0",
+        "type": "mcp pcf in",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Table Saw Button",
+        "chip": "bfab4cae133c7076",
+        "bitNum": "0",
+        "invert": true,
+        "pullUp": true,
+        "debounce": 20,
+        "onMsg": true,
+        "offMsg": false,
+        "diagnostics": false,
+        "x": 250,
+        "y": 1740,
+        "wires": [
+            [
+                "8d40fed2a2919cf0"
+            ]
+        ]
+    },
+    {
+        "id": "376ff8963e64c94e",
+        "type": "ui_button",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Table Saw GUI Button",
+        "group": "c4312b06d2d526ce",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Table Saw",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 260,
+        "y": 1780,
+        "wires": [
+            [
+                "8d40fed2a2919cf0"
+            ]
+        ]
+    },
+    {
+        "id": "8d40fed2a2919cf0",
+        "type": "function",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Table Saw Manager",
+        "func": "const toolName = \"table_saw\";\n\n// Initialize the global state if it doesn't exist\nconst toolStateKey = `tool_state_${toolName}`;\nif (typeof global.get(toolStateKey) === \"undefined\") {\n    global.set(toolStateKey, false);\n}\n\n// Toggle the state\nlet currentState = global.get(toolStateKey);\nlet newState = !currentState;\n\n// Update the global state\nglobal.set(toolStateKey, newState);\n\n// Output the standardized message\nmsg.payload = {\n    topic: toolName,\n    state: newState\n};\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 1780,
+        "wires": [
+            [
+                "466555d250389147"
+            ]
+        ]
+    },
+    {
+        "id": "b1e25179867b3638",
+        "type": "switch",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Light Swticher",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "bench_light",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "hose_button_LED_red",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "hose_button_LED_green",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "hose_button_LED_blue",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "router_table_button_LED_red",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "router_table_button_LED_green",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "router_table_button_LED_blue",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "hoverhead_hose_button_LED_red",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "overhead_hose_button_LED_green",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "overhead_hose_button_LED_blue",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "miter_saw_left_button_LED",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "miter_saw_right_button_LED",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 12,
+        "x": 1440,
+        "y": 800,
+        "wires": [
+            [
+                "d62f1647d7edc098"
+            ],
+            [
+                "8d76d182bf79daba"
+            ],
+            [
+                "5e496bdd88490b01"
+            ],
+            [
+                "e78ff691b8e298c7"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+                "1445045f49d3a052"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "a4f0593c957b49d8",
+        "type": "inject",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Miter Saw Left Injector",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 280,
+        "y": 820,
+        "wires": [
+            [
+                "f6623246005ee1bc"
+            ]
+        ]
+    },
+    {
+        "id": "cd5dbe3d364c5e1d",
+        "type": "mcp pcf in",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Miter Saw Left Button",
+        "chip": "b9050601429adda4",
+        "bitNum": "9",
+        "invert": true,
+        "pullUp": true,
+        "debounce": 20,
+        "onMsg": true,
+        "offMsg": false,
+        "diagnostics": false,
+        "x": 260,
+        "y": 740,
+        "wires": [
+            [
+                "f6623246005ee1bc"
+            ]
+        ]
+    },
+    {
+        "id": "af7c78d2beb359ef",
+        "type": "ui_button",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Miter Saw Left GUI Button",
+        "group": "c4312b06d2d526ce",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Miter Saw Left",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 280,
+        "y": 780,
+        "wires": [
+            [
+                "f6623246005ee1bc"
+            ]
+        ]
+    },
+    {
+        "id": "f6623246005ee1bc",
+        "type": "function",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Miter Saw Left Manager",
+        "func": "const toolName = \"miter_saw_left\";\n\n// Initialize the global state if it doesn't exist\nconst toolStateKey = `tool_state_${toolName}`;\nif (typeof global.get(toolStateKey) === \"undefined\") {\n    global.set(toolStateKey, false);\n}\n\n// Toggle the state\nlet currentState = global.get(toolStateKey);\nlet newState = !currentState;\n\n// Update the global state\nglobal.set(toolStateKey, newState);\n\n// Output the standardized message\nmsg.payload = {\n    topic: toolName,\n    state: newState\n};\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 780,
+        "wires": [
+            [
+                "466555d250389147"
+            ]
+        ]
+    },
+    {
+        "id": "1445045f49d3a052",
+        "type": "PCA9685 out",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Miter Saw Left Button",
+        "pca9685": "b8cfe0329ed84e2a",
+        "channel": "11",
+        "payload": "",
+        "unit": "percent",
+        "onStep": "0",
+        "x": 2000,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "updateStyles",
+        "type": "function",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Update Styles",
+        "func": "global.set('light_styles', msg.payload);\nreturn { payload: 'refresh' };",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 640,
+        "wires": [
+            [
+                "59b6a798ca93a7f6"
+            ]
+        ]
+    },
+    {
+        "id": "5dcb1c267acdf844",
+        "type": "inject",
+        "z": "46a8f0f085fb3f7f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 760,
+        "y": 640,
+        "wires": [
+            [
+                "updateStyles"
+            ]
+        ]
+    },
+    {
+        "id": "59b6a798ca93a7f6",
+        "type": "function",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Light Manager",
+        "func": "// Cache the global lists of lights and light styles\nlet lights = global.get(\"lights\") || [];\nlet lightStyles = global.get(\"light_styles\") || [];\n\n// Ensure lightStyles is an array\nif (!Array.isArray(lightStyles)) {\n    node.warn(\"lightStyles is not an array. Check global.set('light_styles').\");\n    lightStyles = [];\n}\n\n// Get the tool states from the shop manager's output\nlet tools = msg.payload || [];\n\n// Create a list of lights that need to be turned on\nlet onLights = [];\n\n// Build the list of lights that are requested to be \"on\"\ntools.forEach(tool => {\n    if (tool.state) {\n        (tool.preferences.light_prefs || []).forEach(lightId => {\n            if (!onLights.includes(lightId)) {\n                onLights.push(lightId);\n            }\n        });\n    }\n});\n\n// Process each light in the global lights list\nlights.forEach(light => {\n    let lightState = onLights.includes(light.id) ? \"true\" : \"false\";\n\n    // Resolve styles for the light\n    let styles = Object.keys(light.styles || {}).length\n        ? light.styles // Use styles from the light itself if they exist\n        : lightStyles.find(style => style.type === light.type)?.styles || {}; // Fallback to global light_styles\n\n    if (!Object.keys(styles).length) {\n        // Log if styles are not found at all\n        node.warn(`No styles found for light ID: ${light.id}, Type: \"${light.type}\"`);\n        return; // Skip this light\n    }\n\n    if (!styles[lightState]) {\n        // Log if the specific state is not found\n        node.warn(`No styles found for light ID: ${light.id} in state: ${lightState}`);\n        return; // Skip this light\n    }\n\n    // Handle different light types\n    if (light.type === \"pwm_rgbled_button\") {\n        [\"red\", \"green\", \"blue\"].forEach(color => {\n            let value = styles[lightState][color];\n            if (value !== undefined) {\n                node.send({\n                    topic: `${light.id}_${color}`,\n                    payload: value\n                });\n            } else {\n                node.warn(`Missing color value: ${color} for light ID: ${light.id}`);\n            }\n        });\n    } else if (light.type === \"pwm_led_button\") {\n        let value = styles[lightState].value;\n        if (value !== undefined) {\n            node.send({\n                topic: light.id,\n                payload: value\n            });\n        } else {\n            node.warn(`Missing value for pwm_led_button light ID: ${light.id}`);\n        }\n    } else if (light.type === \"relay\") {\n        let value = styles[lightState].value;\n        if (value !== undefined) {\n            node.send({\n                topic: light.id,\n                payload: !!value // Ensure it's a boolean\n            });\n        } else {\n            node.warn(`Missing value for relay light ID: ${light.id}`);\n        }\n    }\n});\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1220,
+        "y": 620,
+        "wires": [
+            [
+                "2576df75c8c1c720",
+                "b1e25179867b3638"
+            ]
+        ]
+    },
+    {
+        "id": "92e930467e3254a9",
+        "type": "function",
+        "z": "46a8f0f085fb3f7f",
+        "name": "function 3",
+        "func": "// Pulse parameters\nconst maxBrightness = 60; // LED \"off\" brightness\nconst minBrightness = 0; // LED \"on\" brightness\nconst pulseDuration = 500; // milliseconds for one full pulse\nconst now = new Date().getTime();\n\n// Calculate the phase of the wave\nconst phase = (now % pulseDuration) / pulseDuration;\nconst sineValue = Math.sin(phase * 2 * Math.PI); // Sine wave\n\n// Map sineValue (-1 to 1) to brightness range\nconst brightness = Math.round(\n    ((sineValue + 1) / 2) * (maxBrightness - minBrightness) + minBrightness\n);\n\n// Output brightness value\nmsg.payload = brightness;\nmsg.topic = \"miter_saw_right_button_LED\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1820,
+        "y": 820,
+        "wires": [
+            [
+                "1445045f49d3a052"
+            ]
+        ]
+    },
+    {
+        "id": "3eeab92487767cb5",
+        "type": "inject",
+        "z": "46a8f0f085fb3f7f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": ".05",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1650,
+        "y": 820,
+        "wires": [
+            [
+                "92e930467e3254a9"
+            ]
+        ]
+    },
+    {
+        "id": "e8715d90ba237290",
+        "type": "inject",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Miter Saw Right Injector",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 280,
+        "y": 940,
+        "wires": [
+            [
+                "728106db7629bb1a"
+            ]
+        ]
+    },
+    {
+        "id": "59067acee1d26e17",
+        "type": "mcp pcf in",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Miter Saw Right Button",
+        "chip": "b9050601429adda4",
+        "bitNum": "5",
+        "invert": true,
+        "pullUp": true,
+        "debounce": 20,
+        "onMsg": true,
+        "offMsg": false,
+        "diagnostics": false,
+        "x": 270,
+        "y": 860,
+        "wires": [
+            [
+                "728106db7629bb1a"
+            ]
+        ]
+    },
+    {
+        "id": "b813a9651f0aabd8",
+        "type": "ui_button",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Miter Saw Right GUI Button",
+        "group": "c4312b06d2d526ce",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Miter Saw Right",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 280,
+        "y": 900,
+        "wires": [
+            [
+                "728106db7629bb1a"
+            ]
+        ]
+    },
+    {
+        "id": "728106db7629bb1a",
+        "type": "function",
+        "z": "46a8f0f085fb3f7f",
+        "name": "Miter Saw Left Manager",
+        "func": "const toolName = \"miter_saw_right\";\n\n// Initialize the global state if it doesn't exist\nconst toolStateKey = `tool_state_${toolName}`;\nif (typeof global.get(toolStateKey) === \"undefined\") {\n    global.set(toolStateKey, false);\n}\n\n// Toggle the state\nlet currentState = global.get(toolStateKey);\nlet newState = !currentState;\n\n// Update the global state\nglobal.set(toolStateKey, newState);\n\n// Output the standardized message\nmsg.payload = {\n    topic: toolName,\n    state: newState\n};\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b1d7e6f2fbb04c90",
+        "type": "ui_switch",
+        "z": "e36b9e24a4f22b67",
+        "name": "Checkbox",
+        "label": "Tool Status",
+        "tooltip": "",
+        "group": "ec8f7d40f4a60f38",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "tool_status",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 340,
+        "y": 160,
+        "wires": [
+            [
+                "a2d94c74fa2e2bf9"
+            ]
+        ]
+    },
+    {
+        "id": "a2d94c74fa2e2bf9",
+        "type": "debug",
+        "z": "e36b9e24a4f22b67",
+        "name": "Debug Output",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "da7725a6ba653a0c",
+        "type": "ui_switch",
+        "z": "e36b9e24a4f22b67",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "group": "2c04fd6e02f0b73f",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 330,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "checkbox_node",
+        "type": "ui_switch",
+        "z": "e36b9e24a4f22b67",
+        "name": "Tool Status Checkbox",
+        "label": "Tool Status",
+        "tooltip": "",
+        "group": "dashboard_group",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "tool_status",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 550,
+        "y": 240,
+        "wires": [
+            [
+                "output_function"
+            ]
+        ]
+    },
+    {
+        "id": "output_function",
+        "type": "debug",
+        "z": "e36b9e24a4f22b67",
+        "name": "Debug Tool Status",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "feaadd05.f046d",
+        "type": "inject",
+        "z": "f7b0c238b5ec10f3",
+        "name": "100%",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "100",
+        "payloadType": "num",
+        "x": 550,
+        "y": 320,
+        "wires": [
+            [
+                "46bd9273.6b279c"
+            ]
+        ]
+    },
+    {
+        "id": "71dd9036.680b3",
+        "type": "inject",
+        "z": "f7b0c238b5ec10f3",
+        "name": "50%",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "topic": "",
+        "payload": "50",
+        "payloadType": "num",
+        "x": 550,
+        "y": 360,
+        "wires": [
+            [
+                "46bd9273.6b279c"
+            ]
+        ]
+    },
+    {
+        "id": "89f319a8.9eea78",
+        "type": "inject",
+        "z": "f7b0c238b5ec10f3",
+        "name": "Off",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 550,
+        "y": 400,
+        "wires": [
+            [
+                "46bd9273.6b279c"
+            ]
+        ]
+    },
+    {
+        "id": "1c347df.4004b82",
+        "type": "inject",
+        "z": "f7b0c238b5ec10f3",
+        "name": "120°",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "2100",
+        "payloadType": "num",
+        "x": 550,
+        "y": 460,
+        "wires": [
+            [
+                "d11db9bf.d2cc58"
+            ]
+        ]
+    },
+    {
+        "id": "ec6ef0f2.d5b56",
+        "type": "inject",
+        "z": "f7b0c238b5ec10f3",
+        "name": "60°",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "topic": "",
+        "payload": "1500",
+        "payloadType": "num",
+        "x": 550,
+        "y": 500,
+        "wires": [
+            [
+                "d11db9bf.d2cc58"
+            ]
+        ]
+    },
+    {
+        "id": "4b72d6f3.2020e8",
+        "type": "inject",
+        "z": "f7b0c238b5ec10f3",
+        "name": "0°",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "topic": "",
+        "payload": "900",
+        "payloadType": "num",
+        "x": 550,
+        "y": 540,
+        "wires": [
+            [
+                "d11db9bf.d2cc58"
+            ]
+        ]
+    },
+    {
+        "id": "eaa2a00e.3dfca",
+        "type": "inject",
+        "z": "f7b0c238b5ec10f3",
+        "name": "Off",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 550,
+        "y": 580,
+        "wires": [
+            [
+                "d11db9bf.d2cc58"
+            ]
+        ]
+    },
+    {
+        "id": "46bd9273.6b279c",
+        "type": "PCA9685 out",
+        "z": "f7b0c238b5ec10f3",
+        "name": "PWM Output 2 (Led)",
+        "pca9685": "b8cfe0329ed84e2a",
+        "channel": "2",
+        "payload": "",
+        "unit": "percent",
+        "onStep": "0",
+        "x": 765,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "d11db9bf.d2cc58",
+        "type": "PCA9685 out",
+        "z": "f7b0c238b5ec10f3",
+        "name": "PWM Output 4 (Servo)",
+        "pca9685": "b8cfe0329ed84e2a",
+        "channel": "4",
+        "payload": "",
+        "unit": "microseconds",
+        "onStep": "0",
+        "x": 775,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "f63a248034f0b8a3",
+        "type": "inject",
+        "z": "b3f25ea1b0799d43",
+        "name": "LED Button Inject",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 420,
+        "y": 540,
+        "wires": [
+            [
+                "b1cb1359150d1bad"
+            ]
+        ]
+    },
+    {
+        "id": "b1cb1359150d1bad",
+        "type": "function",
+        "z": "b3f25ea1b0799d43",
+        "name": "Toggle LED State",
+        "func": "// Toggle LED state in flow context.\n// Input: msg.payload === true triggers toggle.\n\nlet currentState = flow.get(\"ledState\") || false;\n\nif (msg.payload === true) {\n    currentState = !currentState;\n    flow.set(\"ledState\", currentState);\n}\n\nmsg.payload = currentState ? \"on\" : \"off\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 540,
+        "wires": [
+            [
+                "bea78f3b8a0c95fd",
+                "8d740e19dae776c0"
+            ]
+        ]
+    },
+    {
+        "id": "bea78f3b8a0c95fd",
+        "type": "debug",
+        "z": "b3f25ea1b0799d43",
+        "name": "LED State Debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "complete": "payload",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 910,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "525a81b53eb0c096",
+        "type": "ui_template",
+        "z": "b3f25ea1b0799d43",
+        "group": "68837b2a054d0777",
+        "name": "LED Info Panel Content",
+        "order": 1,
+        "width": 6,
+        "height": 2,
+        "format": "<div>\n    <h3>LED Details</h3>\n    <p>This is some info about the LED’s functionality.</p>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 740,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "69141943c07f42f8",
+        "type": "ui_button",
+        "z": "b3f25ea1b0799d43",
+        "name": "Toggle LED from Panel",
+        "group": "68837b2a054d0777",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "label": "Toggle LED",
+        "tooltip": "Toggle the LED from this panel",
+        "color": "#ffffff",
+        "bgcolor": "#0094CE",
+        "className": "",
+        "icon": "fa-lightbulb",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "",
+        "topicType": "str",
+        "x": 740,
+        "y": 760,
+        "wires": [
+            [
+                "b1cb1359150d1bad"
+            ]
+        ]
+    },
+    {
+        "id": "c2631323ffa33e88",
+        "type": "debug",
+        "z": "b3f25ea1b0799d43",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1480,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "8d740e19dae776c0",
+        "type": "ui_button",
+        "z": "b3f25ea1b0799d43",
+        "name": "LED Status Button",
+        "group": "8d82066d5f4fbc1d",
+        "order": 1,
+        "width": 8,
+        "height": 5,
+        "passthru": false,
+        "label": "{{payload}}",
+        "tooltip": "Displays LED status, click to open Info Panel",
+        "color": "#000000",
+        "bgcolor": "{{payload === 'on' ? 'green' : 'gray'}}",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 1010,
+        "y": 680,
+        "wires": [
+            [
+                "d6ba027e50c3627e"
+            ]
+        ]
+    },
+    {
+        "id": "d6ba027e50c3627e",
+        "type": "function",
+        "z": "b3f25ea1b0799d43",
+        "name": "Show LED Info Panel",
+        "func": "let isVisible = flow.get(\"ledInfoPanelVisible\") || false;\n\n// Flip it\nisVisible = !isVisible;\n\n// Store new visibility\nflow.set(\"ledInfoPanelVisible\", isVisible);\n\nif (isVisible) {\n    // Show the panel\n    msg.payload = {\n        group: {\n            show: [\"Shopbot_LED_Info\"],\n            hide: []\n        }\n    };\n} else {\n    // Hide the panel\n    msg.payload = {\n        group: {\n            show: [],\n            hide: [\"Shopbot_LED_Info\"]\n        }\n    };\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 680,
+        "wires": [
+            [
+                "a51472ae41c59810",
+                "c2631323ffa33e88"
+            ]
+        ]
+    },
+    {
+        "id": "a51472ae41c59810",
+        "type": "ui_ui_control",
+        "z": "b3f25ea1b0799d43",
+        "name": "Show/Hide Info Panel",
+        "events": "all",
+        "x": 1600,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "badd1b59e0b393b0",
+        "type": "inject",
+        "z": "b3f25ea1b0799d43",
+        "name": "Hide Info Panel",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"group\":{\"show\":[],\"hide\":[\"Shopbot_Info\"]}}",
+        "payloadType": "json",
+        "x": 1200,
+        "y": 780,
+        "wires": [
+            [
+                "a51472ae41c59810",
+                "c2631323ffa33e88"
+            ]
+        ]
+    },
+    {
+        "id": "b2c7a91faf8bcbc2",
+        "type": "inject",
+        "z": "b3f25ea1b0799d43",
+        "name": "Show Info Panel",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"group\":{\"show\":[\"Shopbot_Info\"],\"hide\":[]}}",
+        "payloadType": "json",
+        "x": 1200,
+        "y": 840,
+        "wires": [
+            [
+                "a51472ae41c59810",
+                "c2631323ffa33e88"
+            ]
+        ]
+    }
+]

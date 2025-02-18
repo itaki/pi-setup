@@ -6,6 +6,8 @@
     "location": "By the Pi",
     "address": {
       "board": "master_pca9685_0x41",
+      "chip": "PCA9685 on I2C-1, Addr 65",
+      "i2c_address": {"hex": "0x41", "dec": 65},
       "channel": 0
     },
     "range": {
@@ -20,6 +22,8 @@
     "location": "By the Pi",
     "address": {
       "board": "master_pca9685_0x41",
+      "chip": "PCA9685 on I2C-1, Addr 65",
+      "i2c_address": {"hex": "0x41", "dec": 65},
       "channel": 1
     },
     "range": {
@@ -34,6 +38,8 @@
     "location": "Below the miter saw",
     "address": {
       "board": "master_pca9685_0x41",
+      "chip": "PCA9685 on I2C-1, Addr 65",
+      "i2c_address": {"hex": "0x41", "dec": 65},
       "channel": 2
     },
     "range": {
@@ -48,6 +54,8 @@
     "location": "Below the miter saw to the left",
     "address": {
       "board": "master_pca9685_0x41",
+      "chip": "PCA9685 on I2C-1, Addr 65",
+      "i2c_address": {"hex": "0x41", "dec": 65},
       "channel": 3
     },
     "range": {
@@ -62,6 +70,8 @@
     "location": "Below the miter saw to the left",
     "address": {
       "board": "master_pca9685_0x41",
+      "chip": "PCA9685 on I2C-1, Addr 65",
+      "i2c_address": {"hex": "0x41", "dec": 65},
       "channel": 4
     },
     "range": {
@@ -76,6 +86,8 @@
     "location": "FloorSweep",
     "address": {
       "board": "master_pca9685_0x41",
+      "chip": "PCA9685 on I2C-1, Addr 65",
+      "i2c_address": {"hex": "0x41", "dec": 65},
       "channel": 6
     },
     "range": {
@@ -90,6 +102,8 @@
     "location": "Corner Branch",
     "address": {
       "board": "master_pca9685_0x41",
+      "chip": "PCA9685 on I2C-1, Addr 65",
+      "i2c_address": {"hex": "0x41", "dec": 65},
       "channel": 7
     },
     "range": {
@@ -104,6 +118,8 @@
     "location": "Below the BandSaw directly after the corner branch split",
     "address": {
       "board": "master_pca9685_0x41",
+      "chip": "PCA9685 on I2C-1, Addr 65",
+      "i2c_address": {"hex": "0x41", "dec": 65},
       "channel": 5
     },
     "range": {
@@ -118,6 +134,8 @@
     "location": "Behind the drill press",
     "address": {
       "board": "master_pca9685_0x41",
+      "chip": "PCA9685 on I2C-1, Addr 65",
+      "i2c_address": {"hex": "0x41", "dec": 65},
       "channel": 8
     },
     "range": {
@@ -131,7 +149,9 @@
     "type": "servo_gate",
     "location": "Flexi pipe dropping out of the everest connection",
     "address": {
-      "board": "everest_pca9685_0x50",
+      "board": "everest_pca9685_0x72",
+      "chip": "PCA9685 on I2C-1, Addr 116",
+      "i2c_address": {"hex": "0x72", "dec": 114},
       "channel": 0
     },
     "range": {
@@ -145,7 +165,9 @@
     "type": "servo_gate",
     "location": "Island Branch overhead articulating arm",
     "address": {
-      "board": "everest_pca9685_0x50",
+      "board": "everest_pca9685_0x72",
+      "chip": "PCA9685 on I2C-1, Addr 116",
+      "i2c_address": {"hex": "0x72", "dec": 114},
       "channel": 1
     },
     "range": {
@@ -159,7 +181,9 @@
     "type": "servo_gate",
     "location": "Table Saw Hood",
     "address": {
-      "board": "everest_pca9685_0x50",
+      "board": "everest_pca9685_0x72",
+      "chip": "PCA9685 on I2C-1, Addr 116",
+      "i2c_address": {"hex": "0x72", "dec": 114},
       "channel": 2
     },
     "range": {
@@ -173,7 +197,9 @@
     "type": "servo_gate",
     "location": "Behind the table saw",
     "address": {
-      "board": "island_pca9685_0x72",
+      "board": "island_pca9685_0x50",
+      "chip": "PCA9685 on I2C-1, Addr 80",
+      "i2c_address": {"hex": "0x50", "dec": 80},
       "channel": 1
     },
     "range": {
@@ -187,7 +213,9 @@
     "type": "servo_gate",
     "location": "Attached to rear of table saw",
     "address": {
-      "board": "island_pca9685_0x72",
+      "board": "island_pca9685_0x50",
+      "chip": "PCA9685 on I2C-1, Addr 80",
+      "i2c_address": {"hex": "0x50", "dec": 80},
       "channel": 2
     },
     "range": {
@@ -201,7 +229,9 @@
     "type": "servo_gate",
     "location": "Sanding Table",
     "address": {
-      "board": "island_pca9685_0x72",
+      "board": "island_pca9685_0x50",
+      "chip": "PCA9685 on I2C-1, Addr 80",
+      "i2c_address": {"hex": "0x50", "dec": 80},
       "channel": 3
     },
     "range": {
@@ -215,7 +245,9 @@
     "type": "servo_gate",
     "location": "Attached to rear of table saw, first.",
     "address": {
-      "board": "island_pca9685_0x72",
+      "board": "island_pca9685_0x50",
+      "chip": "PCA9685 on I2C-1, Addr 80",
+      "i2c_address": {"hex": "0x50", "dec": 80},
       "channel": 0
     },
     "range": {

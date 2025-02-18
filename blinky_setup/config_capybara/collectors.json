@@ -6,7 +6,8 @@
         "location": "By the collector",
         "address": {
             "board": "master_control_gpio_expander",
-            "pins": [5]
+            "chip": "MCP23017 @ 1:20H",
+            "pins": [15]
         },
         "preferences": {
             "minimum_up_time": 10
@@ -19,7 +20,8 @@
         "location": "Over the bench",
         "address": {
             "board": "island_gpio_expander",
-            "pins": [5]
+            "chip": "MCP23017 @ 1:24H",
+            "pins": [15]
         },
         "preferences": {
             "minimum_up_time": 0

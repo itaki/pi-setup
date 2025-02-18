@@ -52,7 +52,7 @@
         "location": "On the miter saw left button",
         "address": {
             "chip": "PCA9685 on I2C-1, Addr 64",
-            "pin": [9]
+            "pin": 9
         },
         "styles": {}
     },
@@ -63,7 +63,7 @@
         "location": "On the miter saw right button",
         "address": {
             "chip": "PCA9685 on I2C-1, Addr 64",
-            "pin": [10]
+            "pin": 10
         },
         "styles": {}
     },
